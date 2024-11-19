@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .md{
+            border: 2px solid black;
+            width: 30px;
+        }
+        .md div{
+         border: 2px solid black;
+         margin: 5px;   
+        }
+        ul{
+            /* display: none; */
+            visibility: hidden;
+        }
+        .md:active ~ ul{
+            /* display: block; */
+            visibility: visible;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="md">
+
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <ul>
+        <li>lis1</li>
+        <li>lis2</li>
+        <li>lis3</li>
+        <li>lis4</li>
+        <li>lis5</li>
+    </ul>
+    
+</body>
+</html>
