@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .md{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .div1,.div2,.div3{
+            border: 2px solid;
+            
+        }
+        .div1{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            flex-wrap: wrap;
+            gap: 10px;
+           
+         
+        }
+        .div1 div{
+            border: 2px solid red;
+            height: 70px;
+            width: 100px;
+            border-radius: 15px;
+            background-color: orange;
+            
+        }
+        
+        .div2{
+            display: flex;
+            padding: 20px;
+            gap: 5px;
+            flex-wrap: wrap;
+            
+            /* height: 250px; */
+        }
+        .div2 div{
+            border: 2px solid red;
+            height: 250px;
+            width: 80px;
+            background-color: yellow;
+            border-radius: 10px
+        }
+        .div3{
+            display: flex;
+            padding: 20px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .div3 div{
+            border: 2px solid green;
+            height: 70px;
+            width: 150px;
+            background-color: red;
+            border-radius: 10px;
+           
+        }
+        .div2_2{
+            flex-grow: 1;
+        }
+        .md{
+            border: 2px solid black;
+            padding: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="md">
+      <div class="div1">
+        <div class="div1_1"></div>
+        <div class="div1_2"></div>
+        <div class="div1_3"></div>
+        <div class="div1_4"></div>
+      </div>
+      <div class="div2">
+        <div class="div2_1"></div>
+        <div class="div2_2"></div>
+        <div class="div2_3"></div>
+      </div>
+      <div class="div3">
+        <div class="div3_1"></div>
+        <div class="div3_2"></div>
+        <div class="div3_3"></div>
+      </div>
+    </div>
+  </body>
+</html>
