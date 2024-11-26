@@ -10,46 +10,77 @@
         background-color: aqua;
         flex-direction: row;
         gap: 10px;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+   
         padding: 50px;
+
+        
+        height: 350px;
+        border: 2px solid ;
       }
       #fb div {
         background-color: rgba(0, 0, 0, 0.377);
         padding: 20px;
+        height: 150px;
+        width: 150px;
       }
       img {
-        height: 100px;
+        height: 50px;
         width: 150px;
+      }
+
+      #div1{
+        order: 2;
+        /* flex-grow: 1;
+        flex-shrink: 0;
+
+        flex-basis: 250px; */
+
+        flex:1 0 250px
+      }
+
+      #div2{
+
+        order: 1;
+        
+       
+        
+      }
+
+      #div3{
+        order: 4;
+      }
+
+      #div4{
+        order:3
       }
     </style>
   </head>
   <body>
     <div id="fb">
-      <div>
+      <div id="div1">
         <h1>ITEM1</h1>
-        <img src="./images/blue.jpg" />
+        <!-- <img src="./images/blue.jpg" /> -->
       </div>
-      <div>
+      <div id="div2">
         <h1>ITEM2</h1>
-        <img src="./images/car1.webp" />
+        <!-- <img src="./images/car1.webp" /> -->
       </div>
-      <div>
+      <div id="div3">
         <h1>ITEM3</h1>
-        <img src="./images/car1.webp" />
+        <!-- <img src="./images/car1.webp" /> -->
       </div>
-      <div>
+      <div id="div4">
         <h1>ITEM4</h1>
-        <img src="./images/car1.webp" />
+        <!-- <img src="./images/car1.webp" /> -->
       </div>
-      <div>
+      <!-- <div id="div5">
         <h1>ITEM5</h1>
         <img src="./images/car1.webp" />
       </div>
-      <div>
+      <div id="div6">
         <h1>ITEM6</h1>
         <img src="./images/car1.webp" />
-      </div>
+      </div> -->
     </div>
   </body>
 </html>

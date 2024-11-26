@@ -26,3 +26,14 @@ flex-wrap: wrap/no-wrap/wrap-reverse
 justify-content:
 align-content:
 align-items:
+
+
+flex-item properties:
+--------------------
+
+1.order
+2.flex-grow
+3.flex-shrink
+4.flex-basis
+5.flex
+6.align-self
