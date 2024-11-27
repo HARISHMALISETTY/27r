@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .cd{
+            width: 205px;
+        }
+      img {
+        height: 200px;
+        width: 200px;
+      }
+      /* @media screen and (min-width: 0px) and (max-width: 425px) {
+        .og,
+        .p2 {
+          display: none;
+        }
+      }
+
+      @media screen and (min-width: 426px) and (max-width: 768px) {
+        .gc,
+        .p2 {
+          display: none;
+        }
+      }
+      @media screen and (min-width: 769px) {
+        .gc,
+        .og {
+          display: none;
+        }
+      } */
+
+      @media screen and (orientation: landscape) {
+        body {
+          background-color: aqua;
+        }
+        .div1 {
+          border: 5px solid red;
+          padding: 25px;
+          background-color: wheat;
+        }
+      }
+      @media screen and (orientation: portrait) {
+        body {
+          background-color: pink;
+        }
+        .div1 {
+          border: 5px solid green;
+          padding: 25px;
+          background-color: rebeccapurple;
+        }
+      }
+      .div1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      .p {
+        background-color: white;
+      }
+
+      @media screen and (min-width: 0px) and (max-width: 475px) {
+        .div1 {
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      .div1 div {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">
+        
+      <div class="cd">
+
+        <div>
+          <img
+            class="gc"
+            src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTo2ID3pg8TLNTGCFuGwZsBHlposulUhPiZ_rbNJyfXAA3CQAE5ZMXwovgeUcWLGsZsgH91d2d0guqFvh5_-arUEw"
+            alt=""
+          />
+
+        </div>
+        <div style="height: 50px;overflow-y: scroll;background-color: white;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ut possimus ipsa architecto perspiciatis quisquam itaque velit voluptatibus magni, iste ducimus rem debitis ex accusamus totam. Laboriosam laudantium asperiores delectus.</p>
+        </div>
+
+        <div class="p"><p>GAME CHANGER</p></div>
+
+      </div>
+
+      <div class="cd">
+        <div>
+          <img
+            class="og"
+            src="https://images.filmibeat.com/img/popcorn/movie_posters/og---original-gangsters-20230904105927-21436.jpg"
+            alt=""
+          />
+        </div>
+        <div style="height: 50px;overflow-y: scroll;background-color: white;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ut possimus ipsa architecto perspiciatis quisquam itaque velit voluptatibus magni, iste ducimus rem debitis ex accusamus totam. Laboriosam laudantium asperiores delectus.</p>
+        </div>
+        <div class="p">
+          <p>OG</p>
+        </div>
+      </div>
+
+      <div class="cd">
+        <div >
+          <img
+            class="p2"
+            src="https://m.media-amazon.com/images/M/MV5BZjJmMjJmYWMtNTQyYy00NzcxLWE5N2EtMTY5NjRhMGZmYjNlXkEyXkFqcGc@._V1_.jpg"
+            alt=""
+          />
+        </div>
+        <div style="height: 50px;overflow-y: scroll;background-color: white;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ut possimus ipsa architecto perspiciatis quisquam itaque velit voluptatibus magni, iste ducimus rem debitis ex accusamus totam. Laboriosam laudantium asperiores delectus.</p>
+        </div>
+        <div class="p">
+          <p>PUSHPA-2</p>
+        </div>
+      </div>
+    
+    </div>
+  </body>
+</html>
