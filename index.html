@@ -1,106 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
- @media screen and (min-width:0px) and (max-width:375px) {
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .md {
+        background-color: red;
+        padding: 10px;
+        display: grid;
+        grid-template-areas:
+          "area1 area2 area3"
+          "area4 area6 area6"
+          "area5 area6 area6";
+        grid-template-rows: 45px 45px 45px;
+        gap: 5px;
+      }
+      .item1 {
+        background-color: aqua;
+        grid-area: area1;
+      }
+      .item2 {
+        background-color: blueviolet;
+        grid-area: area2;
+      }
+      .item3 {
+        background-color: orange;
+        grid-area: area3;
+      }
 
-  .gd{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  
- }
-    .gd{
-      background-color: aqua;
-      padding: 20px;
-      display: grid;     
-      /* grid-template-columns: repeat(auto-fill,minmax(200px,250px));       */
-      grid-template-rows: 100px 100px 100px 100px;
-      row-gap: 10px;
-      column-gap: 10px;
-     }
-
-   .item1{
-    background-color: red;
-    
-    grid-column: 1/4;
-    
-
-   }
-   .item2{
-    background-color:orange;
-    
-    grid-row:2/4 ;
-   
-   }
-   .item3{
-    background-color: palevioletred;
-  
-   }
-   .item4{
-    background-color: burlywood;
-    
-    grid-row: 2/4;
-    grid-column-start: 3;
-   
-   }
-   .item5{
-    background-color: brown; 
-   
-   }
-
-   .item6{
-    background-color: rgb(147, 74, 216);
-    
-    grid-column: 1/4;
-   }
-   img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-   }
-  </style>
-</head>
-<body>
-
-  <div class="gd">
-
-    <div class="item1"><img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></div>
-    <div class="item2"><img src="https://media.istockphoto.com/id/1403500817/photo/the-craggies-in-the-blue-ridge-mountains.jpg?s=612x612&w=0&k=20&c=N-pGA8OClRVDzRfj_9AqANnOaDS3devZWwrQNwZuDSk="></div>
-    <div class="item3"><img src="https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg"></div>
-    <div class="item4"><img src="https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg" alt=""></div>
-    <div class="item5"><img src="https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg" alt=""></div>
-    <div class="item6"><img src="https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg" alt=""></div>
-    <!-- <div class="item2">two</div>
-    <div class="item3">three</div>
-    <div class="item4">four</div>
-    <div class="item1">one</div>
-    <div class="item2">two</div>
-    <div class="item3">three</div>
-    <div class="item4">four</div> -->
-  </div>
-  
-</body>
+      .item4 {
+        background-color: burlywood;
+        grid-area: area4;
+      }
+      .item5 {
+        background-color: greenyellow;
+        grid-area: area5;
+      }
+      .item6 {
+        background-color: cadetblue;
+        grid-area: area6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="md">
+      <div class="item1">item1</div>
+      <div class="item2">item2</div>
+      <div class="item3">item3</div>
+      <div class="item4">item4</div>
+      <div class="item5">item5</div>
+      <div class="item6">item6</div>
+    </div>
+  </body>
 </html>
-
-
-<!-- display:grid
- grid-template-columns: repeat()
- grid-template-rows
- gap
- jc,ac
- 
- fr
-
- g-c-s.g-c-e
- g-r-s,g-r-e
-
- g.c
- g.r
- 
- minmax with autoflow
- 
- -->
