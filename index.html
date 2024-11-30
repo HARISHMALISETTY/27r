@@ -5,52 +5,249 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .md {
-        background-color: red;
-        padding: 10px;
-        display: grid;
-        grid-template-areas:
-          "area1 area2 area3"
-          "area4 area6 area6"
-          "area5 area6 area6";
-        grid-template-rows: 45px 45px 45px;
-        gap: 5px;
-      }
-      .item1 {
-        background-color: aqua;
-        grid-area: area1;
-      }
-      .item2 {
-        background-color: blueviolet;
-        grid-area: area2;
-      }
-      .item3 {
-        background-color: orange;
-        grid-area: area3;
+      .navbar {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        /* width: 90vw; */
+        margin: auto;
+        position: sticky;
+        top: 1px;
+        z-index: 1;
+        background-color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: 0px 0px 5px black;
+        gap: 125px;
       }
 
-      .item4 {
-        background-color: burlywood;
-        grid-area: area4;
+      .nav1_2 {
+        display: flex;
+        justify-content: space-evenly;
+
+        flex-wrap: wrap;
       }
-      .item5 {
-        background-color: greenyellow;
-        grid-area: area5;
+      .nav1_2 a {
+        text-decoration: none;
+        color: black;
       }
-      .item6 {
-        background-color: cadetblue;
-        grid-area: area6;
+      .Projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        width: 90vw;
+        /* gap: 10px; */
+        margin: auto;
+        justify-items: center;
       }
+      .Projects div img {
+        width: 320px;
+        height: 80%;
+      }
+      .house {
+        position: relative;
+      }
+      .house h1 {
+        position: absolute;
+        top: -10px;
+        color: white;
+        background-color: black;
+        font-size: medium;
+        padding: 5px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .About {
+        width: 90vw;
+        margin: auto;
+      }
+      .About1 {
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .About1 img {
+        width: 320px;
+      }
+      .About1 .house {
+        width: 320px;
+      }
+      .About1 button {
+        width: 100%;
+        background-color: rgba(128, 128, 128, 0.15);
+        padding: 10px;
+        border-color: transparent;
+        font-size: large;
+      }
+      button:hover {
+        background-color: gray;
+        cursor: pointer;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        width: 90vw;
+        margin: auto;
+      }
+      input {
+        height: 30px;
+      }
+
+      form button {
+        width: 125px;
+        color: white;
+        background-color: black;
+        padding: 5px;
+        border-color: transparent;
+      }
+      .Footer
+      {
+        background-color: black;
+        color: white;
+        padding: 15px;
+        text-align: center;
+       margin-top: 5px;
+      }
+      .navbar p:hover,li a:hover{
+        background-color: rgba(128, 128, 128, 0.338);
+        padding: 10px;
+      }
+     
     </style>
   </head>
   <body>
-    <div class="md">
-      <div class="item1">item1</div>
-      <div class="item2">item2</div>
-      <div class="item3">item3</div>
-      <div class="item4">item4</div>
-      <div class="item5">item5</div>
-      <div class="item6">item6</div>
+    <div class="navbar">
+      <p><strong>BR</strong> Architects</p>
+      <ul style="display: flex; gap: 10px; list-style: none; flex-wrap: wrap">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div style="position: relative; display: flex; justify-content: center">
+      <img
+        style="width: 90vw"
+        src="https://www.w3schools.com/w3images/architect.jpg"
+        alt=""
+      />
+      <h1 style="position: absolute; top: 50%; left: 40%; font-size: 80%">
+        BR ARCHITECTURE
+      </h1>
+    </div>
+    <div style="margin-left: 5%" id="projects"><h1>Projects</h1></div>
+
+    <div class="Projects">
+      <div class="house">
+        <img src="https://www.w3schools.com/w3images/house5.jpg" />
+        <h1>Summer House</h1>
+      </div>
+      <div class="house">
+        <img src="https://www.w3schools.com/w3images/house2.jpg" />
+        <h1>Brick House</h1>
+      </div>
+      <div class="house">
+        <img src="https://www.w3schools.com/w3images/house3.jpg" />
+        <h1>Renovated</h1>
+      </div>
+      <div class="house">
+        <img src="https://www.w3schools.com/w3images/house5.jpg" />
+        <h1>Summer House</h1>
+      </div>
+      <div class="house">
+        <img src="https://www.w3schools.com/w3images/house2.jpg" />
+        <h1>Brick House</h1>
+      </div>
+      <div class="house">
+        <img src="https://www.w3schools.com/w3images/house3.jpg" />
+        <h1>Renovated</h1>
+      </div>
+      <div class="house">
+        <img src="https://www.w3schools.com/w3images/house5.jpg" />
+        <h1>Summer House</h1>
+      </div>
+      <div class="house">
+        <img src="https://www.w3schools.com/w3images/house2.jpg" />
+        <h1>Brick House</h1>
+      </div>
+    </div>
+    <div style="margin-left: 5%" id="about"><h1>About</h1></div>
+   
+    <div class="About" >
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit
+        consequuntur et aperiam alias hic quae ea labore perferendis voluptate
+        sunt maiores asperiores maxime inventore, repudiandae accusantium
+        facilis itaque sint voluptatem? Lorem ipsum dolor sit amet consectetur,
+        adipisicing elit. Suscipit consequuntur et aperiam alias hic quae ea
+        labore perferendis voluptate sunt maiores asperiores maxime inventore,
+        repudiandae accusantium facilis itaque sint voluptatem?
+      </p>
+    </div>
+    <div class="About1">
+      <div class="house">
+        <img src="https://www.w3schools.com/w3images/team2.jpg" />
+        <p>John Doe</p>
+        <p>CEO & Founder</p>
+        <p>
+          Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+          pellentesque elementum.
+        </p>
+        <button>contact</button>
+      </div>
+      <div class="house">
+        <img src="https://www.w3schools.com/w3images/team1.jpg" />
+        <p>John Doe</p>
+        <p>CEO & Founder</p>
+        <p>
+          Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+          pellentesque elementum.
+        </p>
+        <button>contact</button>
+      </div>
+      <div class="house">
+        <img src="https://www.w3schools.com/w3images/team3.jpg" />
+        <p>John Doe</p>
+        <p>CEO & Founder</p>
+        <p>
+          Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+          pellentesque elementum.
+        </p>
+        <button>contact</button>
+      </div>
+      <div class="house">
+        <img src="https://www.w3schools.com/w3images/team4.jpg" />
+        <p>John Doe</p>
+        <p>CEO & Founder</p>
+        <p>
+          Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+          pellentesque elementum.
+        </p>
+        <button>contact</button>
+      </div>
+    </div>
+    <div style="margin-left: 5%" id="contact">
+      <h1>Contact</h1>
+      <p>Lets get in touch and talk about your next project.</p>
+    </div>
+    <form>
+      <input type="text" placeholder="Name" /><input
+        type="text"
+        placeholder="Mail"
+      />
+      <input type="text" placeholder="Subject" /><input
+        type="text"
+        placeholder="comment"
+      />
+      <button style="">SEND MESSAGE</button>
+    </form>
+    <div style="display: flex;justify-content: center;margin-top: 20px;">
+      <img   style="width: 90vw;" src="https://www.w3schools.com/w3images/map.jpg" alt="">
+    </div>
+    <div class="Footer">
+      <p>Powered by 10000coders-27R</p>
     </div>
   </body>
 </html>
