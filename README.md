@@ -22,3 +22,42 @@ input:focus{}
 :link
 :visited
 :root
+
+
+:nth-child
+:first-child
+:last-child
+:first-of-type
+:last-of-type
+:nth-of-type
+
+
+pseudo elements:
+----------------
+if we want to style specific part of an element,we can use pseudo elements.
+
+syntax:
+-------
+selector::pseudo-element;
+
+::first-letter
+::first-line
+::before
+::after
+::marker
+::selection
+:: placeholder
+
+
+
+transforms:
+-----------
+changing from one phase to another phase.
+few transforms:
+
+1.scale---scalex,scaley
+2.rotate--rotatex,rotatey,rotatez
+3.skew---skewx,skewy,skewz
+4.translate--translatex,translatey,translatez
+
+

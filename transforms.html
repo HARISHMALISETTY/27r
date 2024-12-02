@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .div1{
+            
+            margin: 250px auto;
+            border: 2px solid;
+            background-color: red;
+            width: 120px;
+            height: 100px;
+            /* transform: scale(1,1); */
+        }
+
+        .div1:hover{
+
+            /* transform: translateY(25px); */
+            /* transform: scaleY(2); */
+            /* transform: rotateY(125deg); */
+            transform: skewY(45deg);
+            
+        }
+
+        /* section{
+            perspective: 150px;
+        } */
+
+        #translate:checked ~ .div1{
+            transform: translate(25px,52px);
+        }
+        #rotate:checked ~ .div1{
+
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+<section>
+    <input type="radio" id="translate" name="transform">translate <br>
+    <input type="radio" id="rotate" name="transform">rotate
+    <div class="div1">helloo</div>
+
+</section>
+
+   
+    
+</body>
+</html>
