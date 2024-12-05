@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* @keyframes animi-1 {
+        from {
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-image: url("https://media.istockphoto.com/id/1143979227/photo/small-tiger.jpg?s=612x612&w=0&k=20&c=1X_PhEIpoVRRcBMj6DbrSoj_D8IP5CaYNd2OSYDtuuA=");
+           
+          transform: scale(1,1);
+          border-radius: 10px;
+          
+        }
+
+        to {
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-image: url("https://img.freepik.com/free-photo/front-view-wild-tiger-nature_23-2150747944.jpg");
+          transform: scale(3,3);
+          border-radius: 25px;
+        }
+      } */
+
+
+      @keyframes animi-1 {
+
+        10%{
+
+            background-image: url("https://rukminim2.flixcart.com/image/850/1000/krtjgcw0/poster/w/y/b/small-cute-baby-posters-new-born-cute-smiling-baby-poster-large-original-imag5gp77gnufjnb.jpeg?q=90&crop=false");
+        }
+        20%{
+            background-image: url("https://c8.alamy.com/comp/DFR8EY/portrait-of-a-5-year-old-indian-boy-seating-on-ball-DFR8EY.jpg");
+        }
+        30%{
+            background-image: url("https://www.shutterstock.com/image-photo/portrait-cute-10-year-old-260nw-273159779.jpg");
+        }
+        60%{
+            background-image: url("https://www.shutterstock.com/image-photo/smiling-teen-boy-1415-year-260nw-1369781666.jpg");
+        }
+        80%{
+            background-image: url("https://img.freepik.com/premium-photo/image-25-year-old-indian-man-that-is-smiling-camera_878783-7221.jpg");
+        }
+
+        100%{background-image: url("https://media.istockphoto.com/id/1386833434/photo/portrait-of-smiling-mature-man-standing-on-white-background.jpg?s=612x612&w=0&k=20&c=AZyuaDlPTik3xkCyPryyzEqQmB3qb4g56GnqOH2TxGo=");}
+      }
+      .div1 {
+        margin: 100px auto;
+        width: 225px;
+        height: 200px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        animation-name: animi-1;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        animation-direction:alternate;
+        animation-delay: 2s;
+        animation-timing-function:steps(5);
+        /* animation-fill-mode: backwards; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1"></div>
+  </body>
+</html>
