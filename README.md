@@ -49,6 +49,45 @@ why js?
 9.any application will works based on the req-res model.
 10.so, it should have 3-phases-->frontend,backend and database.
 
+js history:
+-----------
+An employee of netscape named brendan eich developed js in just 10 days in the year 1995 and 
+named it as 'mocha'. and renamed to javascript later by inspiring java.
+
+netscape navigator 2.0, they have started using js in their browser.
+
+explorer also invented a language named 'jscript'.
+
+in 1997,ECMA adopted js to add standards to it.
+
+first edition of ES1 was published in 1997.
+es2,es3 were release in 1998 and 1999.
+
+from 2009, nodejs was introduced as runtime environment for js, and to run at server-side.
+
+now, latest version is ES15 in 2024.
+
+implementation of javascript:
+-----------------------------
+we have mainly two ways for implementing javascript.
+
+1.internal javascript
+2.external javascript in a file with extension .js
+
+with these we can run js only in browser.
+
+whenever we want to run javascript in local system, then we need to install nodejs and file extension should be always .js
+
+
+
+
+
+
+
+
+
+
+
 
 
 
