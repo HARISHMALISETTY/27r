@@ -79,6 +79,51 @@ with these we can run js only in browser.
 whenever we want to run javascript in local system, then we need to install nodejs and file extension should be always .js
 
 
+js will uses interpreter as a translator which will executes line by line.
+
+basically js is based on interpreter but from modern js, starts using JIT compiler(Just in time).
+
+
+intially js is a single threaded synchronous based language, which blocks the other operations until current operation
+get completes.
+
+core features of js:
+---------------
+1.dynamically typed language:- no need to mention the data type which is assigning to a variable.
+2.object-oriented programming:-mainly follows inheritance,polymorphism and encapsulation.
+3.functional programming:js follows the functional way of programming which follows callbackfunctions,higher order functions and closures..
+4.First-class Funcitons:functions in js are first-class why beacause, they can be pass as arguements and they can returns another function and they can be store in data structures.
+5.prototype-based inheritance:js uses prototype based-inheritance, where objects inherit properties from their prototypes.
+
+web development features:
+--------------------------
+1.DOM MANIPULATION.
+2.EVENT HANDLING
+3.FETCH API/HTTP REQUESTS
+4.WEB STORAGES-localstorage/session storage and cookies.
+
+
+modern features:
+----------------
+1.Async/Await
+2.Promises
+3.Classes
+4.Modules
+5.TypeScript
+6.JSON-javascript object notation. which can be used in interchanging the data b/w the two systems.
+7.Error handling
+8.Regular expressions one of the datatype in js.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
