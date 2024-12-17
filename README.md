@@ -115,6 +115,63 @@ modern features:
 8.Regular expressions one of the datatype in js.
 
 
+Variable..?
+-----------
+var
+let and const
+
+1.decleration
+2.assignment
+3.intialisation---decleration+assignment.
+
+
+
+
+// some of the rules to be follow for variable names:
+//-------------------------------------------------------
+//we can't use reserved words/keywords as variable names.
+// variable name can starts with symbols _ and $.
+// cannnot starts with numbers
+// cannot take any value as a variable.
+// variable names should not contains any empty spaces in b/w
+// variable names should not contain any operators like(-,*,+,/,%) 
+
+
+
+
+
+datatypes are nothing but just data.
+
+they are classified into two types:
+
+1.primitive
+    a.number--- just any kind of number
+    b.string-- group of characters, can be denoted with ' ' or " "
+    c.boolean-- true/ false
+    d.undefined
+    e.null
+    f.symbol
+    g.bigint
+2.non-primitive
+    a.array
+    
+        collection of different data
+        denotes with []
+        length can be find with .length
+        indexes for every data will be starts from 0
+        it will allows only positive indexes to access values
+        eg:array[index].
+
+    b.object
+    c.function
+    d.date
+    e.regex
+NaN(Not a Number)---special data type.
+
+
+
+
+
 
 
 
