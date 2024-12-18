@@ -166,9 +166,16 @@ they are classified into two types:
     c.function
     d.date
     e.regex
+
 NaN(Not a Number)---special data type.
 
+prompt-->is a browser method to take the inputs from the user.
 
+prompt("message");
+
+alert--->it is a browser method to show the output as an alert with in the browser.
+
+alert("output")
 
 
 
