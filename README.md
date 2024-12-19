@@ -179,7 +179,15 @@ alert("output")
 
 
 
+<!-- type conversion:
+--------------------
+1.implicit conversion: done automatically according to the value/data and operator.
 
+2.explicit conversion:
+need to specify explicitly by the developer. 
+
+
+-->
 
 
 

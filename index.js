@@ -1,201 +1,223 @@
-// // // // //     var a; // decleration of a
+// // arithmatic operators:
+// // ------------------------
 
-// // // // //     a=25; // assigning a value to a
 
-// // // // //     var a; // re-decleration
+// // 1.addition
 
-// // // // //     a=40; // re-assigning
+// // let a=2;
 
-// // // // //     var a=5; // intialisation
+// // let b=4;
 
-// // // // //     var a=10; // re-intialisation.
+// // let c=a+b;
 
-// // // // //     console.log(a)
+// // let arr=[10,2,3,4,15];
 
-// // // // //     var a=25
-// // // // //     //  at line 2, iam using this for addition
+// // let sum=arr[0]+arr[arr.length-1]
 
-// // // // //  var a=35
-
-// // // // //  // at line 1002, iam using this for subtraction.
-
-// // // // //  // line no 1350,
-
-// // // // //  let x; // decleration
-
-// // // // //  x=20;// assigning
-
-// // // // //  x=40 // re-assigning
-
-// // // // //  console.log(x)
-
-// // // // // //  let x; // we can't redeclare
-
-// // // // // // can i re-initialise the variable using let?
-
-// // // // // // intialise--->declearation + assignment
-
-// // // // // // re-inaitlise-->redecleration + reassignment
-
-// // // // // // const d=3.1414;
-
-// // // // // //  d=1414;
-
-// // // // // //  console.log(d)
-
-// // // // let a1="harish"; // intialised with let
-
-// // // //  a1="10000coders"; // re-assigning or updating
-
-// // // // // iam trying to re-intialise but it won't allows , why because a1 is having already
-// // // // // let behaviour in it.
-
-// // // // let x='hello'
-
-// // // // console.log(typeof x)
-
-// // // // let x=True;
-
-// // // // console.log(typeof x)
-
-// // // // let x=10;
-// // // // let x;
-// // // // let y=x;
-
-// // // // console.log(y)
-
-// // // // let tRue;
-
-// // // // let x=tRue;
-
-// // // // console.log(typeof x);
-
-// // // // let x=null;
-
-// // // // console.log(typeof typeof x)
-
-// // // // let x=[1,2,"hi",true,4,null];
-// // // // console.log(x[x.length-1])
-
-// // // // console.log(x[x.length-3])
-
-// // // // console.log(x.length)
-
-// // // // console.log(typeof x);
-
-// // // // an object will store the values with names also
-// // // // collection of properties
-// // // // collection of key-value pairs.
-
-// // // // objects can be denotes with {}
-// // // //{property1,property2,property3}
-// // // // let obj={
-// // // //     "key1":value1,
-// // // //     "key2":value2,
-// // // //     "key3":value3
-// // // // }
-
-// // // let student={
-// // //     id:"1",
-// // //     name:"syam",
-// // //     batch:"27r",
-// // //     city:"hyderabad",
-// // //     job:"fullstack_developer",
-// // //     package:"5lpa",
-// // //     gender:"male",
-// // //     isHavingGirlFriend:true,
-// // //     skills:["html","css","js","python"]
-// // // }
-
-// // // // using . or [], we can access specific properties from the object
-// // // // console.log( student.skills.length)
-
-// // // // var i=45; // memory -x001
-
-// // // // var j=i; // memory -x002
-
-// // // // j=100;
-// // // // i=55;
-
-// // // // console.log(j)
-// // // // console.log(i)
-
-// // // // var x=[1,2,3,4,5];
-
-// // // // var y=x;
-
-// // // // y[2]="hii"
-
-// // // // console.log(y[2],x[2])
-
-// // // let ip1=123;
-
-// // // let ip2=ip1;
-
-// // // ip2=456;
-
-// // // console.log(ip2,ip1)
-
-// // let obj1={
-// //     name:"tharun",
-// //     city:"hyd"
+// // let obj={
+// //   e_id:"123",
+// //   e_name:"revanth",
+// //   e_net_pay:32500,
+// //   e_tax:2500
 // // }
+// // console.log(sum)
 
-// // let obj2=obj1;
+// // let gross_pay=obj["e_net_pay"]+obj["e_tax"];
 
-// // obj2.city="sec";
+// // let gross_pay=obj.e_net_pay+obj.e_tax
 
-// // console.log(obj1,obj2)
-
-// // var str="welcome";
-
-// // console.log(str.length)
-
-// // console.log(str[str.length-2]," and ",str[2])
-
-// var a=1;
-// var b=2;
-
-// console.log(a+"and"+b);
-
-// console.log(`${a} and ${b}`)
-
-let arr = [1, 2, 3, 4, 5, 6, 7, 8];
-
-// o/p-->smallest num in arr is 1 and largest num in arr is 8
-
-console.log(
-  `smallest num in arr is ${arr[0]} and largest num is ${arr[arr.length - 1]}`
-);
-
-let username = prompt("enter username");
-
-let money = prompt("enter money");
-let obj = {
-  name: username,
-  cash: money,
-  from: "hyderabad",
-  to: "ongole",
-  by: "car",
-  on: "monday",
-};
-alert(`${obj.name} has travelled from ${obj.from} to ${obj.to} by ${obj.by} with cash of ${obj.cash} on ${obj.on}
-    `);
-
-// op--> karthik has travelled from hyderabad to ongole by car with cash of 100000 on monday.
+// // console.log(gross_pay)
 
 
-//1.create one user object with details of purchasing a product.
-//object should contains --->username,product,price,day,occassion,platform.
+// // let a=10;
 
-//op mahesh has purchased a washingmachine which costs 25000 on monday
-//  on occassion of pongal in amazon
+// // let b=2;
 
 
-//2.create one student object with details of placement.
 
-// object should contains--->studname,companyname,package,domain,joiningdate.
+// // let sub=a-b;
 
-// o/p--> mahesh got placed in stick-soft company as a reactdeveloper with package of
-//  4lakhs and
-// joining is on 01/01/2025
+// // let mul=a**b
+
+
+// // let div=a/b; this will returns quotient
+
+// // let mod=a%b; this will returns reminder
+
+// // console.log(mod)
+
+// // let x=5;
+
+// // x++;
+
+// // console.log(x)
+
+
+// // console.log(x++); // when x value is 5, we have printed and then incremented
+
+// // console.log(x++) // now x is updated with increment value.
+
+
+// // console.log(++x)
+
+
+// // let y=++x;
+
+// // console.log(y)
+
+
+// let x=10;
+
+// // x--; // 9
+// // --x; // 8
+
+// // console.log(x--);
+
+// // console.log(--x)
+
+// // x--;
+
+// // --x;
+
+// // console.log(x++);
+
+// // console.log(++x)
+
+
+let x=5;
+
+x=x+5;
+
+x+=5 // += is addition assignment
+
+// console.log(x)
+
+let y=10;
+
+y=y-2;
+
+y-=2;// -= is subtraction assignment
+
+
+let z=5;
+z=z*4;
+z*=4 // *= is a multiplication assignment 
+
+
+
+let o=25;
+
+// o=o/4;
+
+o/=4 // /= is division assignment operator
+
+// console.log(o)
+
+let p=108;
+
+p=p%5; // %= is modulus assignemnt operator
+
+// console.log(p)
+
+
+let q=4;
+
+q**=6; // **= is exponential assignment operator
+
+// console.log(q)
+
+
+// bhaai in s/o satyamurthi is not same as bhaai in pushpa2 --true
+
+// 10kc in ofc2 and ofc4 are different -false
+
+
+// let x1=4;
+
+// let x2=10;
+
+// console.log(x1!=x2)
+
+// console.log(x1==x2);
+
+let x1="2";
+
+let x2=2;
+
+console.log(x1!==x2)
+
+
+
+// == compares only value
+// === compares value and its type
+// != compares only value
+//!== compares value and its type
+// > greaterthan
+// < less than
+// >= greaterthan or equal
+// <= lessthan or equal
+
+
+
+// let x11="2";
+
+// let y11=+x11;
+
+// console.log(typeof x11)
+// console.log(typeof y11)
+
+
+// let str1="111";
+
+// let str2=105;
+
+// console.log(str1+str2);
+
+
+// let str1="arvindh";
+
+// str1+="hello";
+
+// console.log(str1)
+
+
+let arr=["hi","hello","welcome"];
+
+
+let ip="tarun";
+
+
+//  op--hi taran
+// hello tarun
+// welcome tarun
+
+// console.log(arr[0]+ip,arr[1]+ip,arr[2]+ip);
+
+
+
+// let a;
+
+// let b
+
+// console.log(a-b)
+
+
+// let a="45"
+
+// let b="2";
+
+// console.log(a*b)
+
+
+let a=45;
+console.log(a);
+console.log(b);
+var b=45;
+
+// why iam getting undefined here????--research and come tomorrow.
+
+
+
+
+
+
