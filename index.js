@@ -1,223 +1,307 @@
-// // arithmatic operators:
-// // ------------------------
+// // // arithmatic operators:
+// // // ------------------------
 
+// // // 1.addition
 
-// // 1.addition
+// // // let a=2;
 
-// // let a=2;
+// // // let b=4;
 
-// // let b=4;
+// // // let c=a+b;
 
-// // let c=a+b;
+// // // let arr=[10,2,3,4,15];
 
-// // let arr=[10,2,3,4,15];
+// // // let sum=arr[0]+arr[arr.length-1]
 
-// // let sum=arr[0]+arr[arr.length-1]
+// // // let obj={
+// // //   e_id:"123",
+// // //   e_name:"revanth",
+// // //   e_net_pay:32500,
+// // //   e_tax:2500
+// // // }
+// // // console.log(sum)
 
-// // let obj={
-// //   e_id:"123",
-// //   e_name:"revanth",
-// //   e_net_pay:32500,
-// //   e_tax:2500
-// // }
-// // console.log(sum)
+// // // let gross_pay=obj["e_net_pay"]+obj["e_tax"];
 
-// // let gross_pay=obj["e_net_pay"]+obj["e_tax"];
+// // // let gross_pay=obj.e_net_pay+obj.e_tax
 
-// // let gross_pay=obj.e_net_pay+obj.e_tax
+// // // console.log(gross_pay)
 
-// // console.log(gross_pay)
+// // // let a=10;
 
+// // // let b=2;
 
-// // let a=10;
+// // // let sub=a-b;
 
-// // let b=2;
+// // // let mul=a**b
 
+// // // let div=a/b; this will returns quotient
 
+// // // let mod=a%b; this will returns reminder
 
-// // let sub=a-b;
+// // // console.log(mod)
 
-// // let mul=a**b
+// // // let x=5;
 
+// // // x++;
 
-// // let div=a/b; this will returns quotient
+// // // console.log(x)
 
-// // let mod=a%b; this will returns reminder
+// // // console.log(x++); // when x value is 5, we have printed and then incremented
 
-// // console.log(mod)
+// // // console.log(x++) // now x is updated with increment value.
 
-// // let x=5;
+// // // console.log(++x)
 
-// // x++;
+// // // let y=++x;
+
+// // // console.log(y)
+
+// // let x=10;
+
+// // // x--; // 9
+// // // --x; // 8
+
+// // // console.log(x--);
+
+// // // console.log(--x)
+
+// // // x--;
+
+// // // --x;
+
+// // // console.log(x++);
+
+// // // console.log(++x)
+
+// let x=5;
+
+// x=x+5;
+
+// x+=5 // += is addition assignment
 
 // // console.log(x)
 
+// let y=10;
 
-// // console.log(x++); // when x value is 5, we have printed and then incremented
+// y=y-2;
 
-// // console.log(x++) // now x is updated with increment value.
+// y-=2;// -= is subtraction assignment
 
+// let z=5;
+// z=z*4;
+// z*=4 // *= is a multiplication assignment
 
-// // console.log(++x)
+// let o=25;
 
+// // o=o/4;
 
-// // let y=++x;
+// o/=4 // /= is division assignment operator
 
-// // console.log(y)
+// // console.log(o)
 
+// let p=108;
 
-// let x=10;
+// p=p%5; // %= is modulus assignemnt operator
 
-// // x--; // 9
-// // --x; // 8
+// // console.log(p)
 
-// // console.log(x--);
+// let q=4;
 
-// // console.log(--x)
+// q**=6; // **= is exponential assignment operator
 
-// // x--;
+// // console.log(q)
 
-// // --x;
+// // bhaai in s/o satyamurthi is not same as bhaai in pushpa2 --true
 
-// // console.log(x++);
+// // 10kc in ofc2 and ofc4 are different -false
 
-// // console.log(++x)
+// // let x1=4;
 
+// // let x2=10;
 
-let x=5;
+// // console.log(x1!=x2)
 
-x=x+5;
+// // console.log(x1==x2);
 
-x+=5 // += is addition assignment
+// let x1="2";
 
-// console.log(x)
+// let x2=2;
 
-let y=10;
+// console.log(x1!==x2)
 
-y=y-2;
+// // == compares only value
+// // === compares value and its type
+// // != compares only value
+// //!== compares value and its type
+// // > greaterthan
+// // < less than
+// // >= greaterthan or equal
+// // <= lessthan or equal
 
-y-=2;// -= is subtraction assignment
+// // let x11="2";
 
+// // let y11=+x11;
 
-let z=5;
-z=z*4;
-z*=4 // *= is a multiplication assignment 
+// // console.log(typeof x11)
+// // console.log(typeof y11)
 
+// // let str1="111";
 
+// // let str2=105;
 
-let o=25;
+// // console.log(str1+str2);
 
-// o=o/4;
+// // let str1="arvindh";
 
-o/=4 // /= is division assignment operator
+// // str1+="hello";
 
-// console.log(o)
+// // console.log(str1)
 
-let p=108;
+// let arr=["hi","hello","welcome"];
 
-p=p%5; // %= is modulus assignemnt operator
+// let ip="tarun";
 
-// console.log(p)
+// //  op--hi taran
+// // hello tarun
+// // welcome tarun
 
+// // console.log(arr[0]+ip,arr[1]+ip,arr[2]+ip);
 
-let q=4;
+// // let a;
 
-q**=6; // **= is exponential assignment operator
+// // let b
 
-// console.log(q)
+// // console.log(a-b)
 
+// // let a="45"
 
-// bhaai in s/o satyamurthi is not same as bhaai in pushpa2 --true
+// // let b="2";
 
-// 10kc in ofc2 and ofc4 are different -false
+// // console.log(a*b)
 
+// let a=45;
+// console.log(a);
+// console.log(b);
+// var b=45;
 
-// let x1=4;
+// // why iam getting undefined here????--research and come tomorrow.
 
-// let x2=10;
+// // logical
+// // conditional
+// // bitwise
 
-// console.log(x1!=x2)
+// let x1=5;
+// let x2=4;
 
-// console.log(x1==x2);
+// let result=!((x1>x2)&&(x1==x2));
 
-let x1="2";
+// console.log(result)
 
-let x2=2;
+let arr1 = [1, 2, 3, 4, 5];
 
-console.log(x1!==x2)
+let arr2 = ["A", "B", "C", "123"];
 
+// console.log((arr1.length<arr2.length)||(arr1.length==arr2.length))
 
+// let obj1={
+//   "name":"emp1",
+//   "salry":25000
+// }
 
-// == compares only value
-// === compares value and its type
-// != compares only value
-//!== compares value and its type
-// > greaterthan
-// < less than
-// >= greaterthan or equal
-// <= lessthan or equal
+// let obj2={"name":"emp2","slry":26500};
 
+// let result=!((obj1.salry<obj2.slry)&&(obj1.salry==obj2.slry))
 
+// console.log(result)
 
-// let x11="2";
+// either nodejs or django
 
-// let y11=+x11;
+// database is mandatory
 
-// console.log(typeof x11)
-// console.log(typeof y11)
+// exp 4+
 
+// ready to join in 15 days
 
-// let str1="111";
+// ready to relocate
 
-// let str2=105;
+// flexible
 
-// console.log(str1+str2);
+// let isNodejs = true;
+// let isDjango = false;
+// let exp = 4.5;
+// let joinIn = 25;
+// let isreLocate = true;
+// let isFlexible = true;
+// let job =
+//   (isNodejs || isDjango) && exp > 4 && joinIn <= 15 && isreLocate && isFlexible;
+// console.log(job);
 
+// job
+//   ? console.log("eligible for the job")
+//   : console.log("not eligible for the job");
 
-// let str1="arvindh";
+// conditional operators
 
-// str1+="hello";
+//1.terinary operator
 
-// console.log(str1)
+//2.optional chaining
 
+// let isLogin=true;
 
-let arr=["hi","hello","welcome"];
+// isLogin?console.log("login successful"):console.log("login unsuccessful");
 
+// let username = "suresh";
+// let password = "harish123";
 
-let ip="tarun";
+// username == "harish" && password == "harish123"
+//   ? console.log("login successful")
+//   : console.log("failed to login");
 
+// let obj = {
+//   userName: "harish",
+//   address: {
+//     "d_no":"3-8-59",
+//     "street":"Roadno-3",
+//     "city":"hyderabad"
+//   }
+// };
 
-//  op--hi taran
-// hello tarun
-// welcome tarun
+// console.log(obj.address1?.pincode)
 
-// console.log(arr[0]+ip,arr[1]+ip,arr[2]+ip);
 
 
+// let arr=[1,2,3,4,[5,6,7]]
 
-// let a;
+// console.log(arr[8]?.[3])
 
-// let b
 
-// console.log(a-b)
 
 
-// let a="45"
+`
+0000
+0001
+0010
+0011
+0100
+0101
+0110
+0111
+1000
+1001
+1010
+1011
+1100
+1101
+1110
+1111
+10000
+10001
+10010
+`
 
-// let b="2";
 
-// console.log(a*b)
+// let op=15^12; 
 
-
-let a=45;
-console.log(a);
-console.log(b);
-var b=45;
-
-// why iam getting undefined here????--research and come tomorrow.
-
-
-
-
-
+// console.log(op)
 

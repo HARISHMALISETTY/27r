@@ -164,6 +164,7 @@ they are classified into two types:
 
     b.object
     c.function
+    
     d.date
     e.regex
 
@@ -189,6 +190,11 @@ need to specify explicitly by the developer.
 
 -->
 
+
+
+terinary operator syntax:
+------------------------
+condition?true statement:false statement;
 
 
 
