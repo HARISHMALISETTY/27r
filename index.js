@@ -90,16 +90,74 @@
 // else---->check chicken or mutton.
 // 	if chicken-->print chicken
 // 	else print mutton.
-let login = false;
-let customer = "non";
-let item = "chicken";
+// let login = false;
+// let customer = "non";
+// let item = "chicken";
 
-login
-  ? customer == "veg"
-    ? item == "gobi"
-      ? console.log("gobi")
-      : console.log("paneer")
-    : item == "chicken"
-    ? console.log("chicken")
-    : console.log("mutton")
-  : console.log("please login");
+// login
+//   ? customer == "veg"
+//     ? item == "gobi"
+//       ? console.log("gobi")
+//       : console.log("paneer")
+//     : item == "chicken"
+//     ? console.log("chicken")
+//     : console.log("mutton")
+//   : console.log("please login");
+
+// debugger;
+
+// console.log(a)
+// we are trying to access before intialisation---
+// in var case we will get undefined because only decleration part of the var will moves to
+// top of the scope.
+// console.log(b)
+//in the case of let and const, we can't access them before its initialisation
+// because they will be store in temporal dead zone until intialisation happens.
+
+// console.log(c)
+
+// var a=45;
+
+// let b=5;
+
+// const c=25;
+
+// console.log(a)
+
+// console.log(b)
+
+// console.log(c)
+
+// let arr=["hi","hello","welcome","js","html","css"];
+
+// let str="javascript"
+// for(let i of str){
+
+//   console.log(i)
+// }
+
+// let aoo = [
+//   {
+//     id: 1,
+//     title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+//     price: 109.95,
+//   },
+//   { id: 2, title: "Mens Casual Premium Slim Fit T-Shirts ", price: 22.3 },
+//   { id: 3, title: "Mens Cotton Jacket", price: 55.99 },
+// ];
+
+// for (i in aoo) {
+//   console.log(aoo[i].price);
+// }
+
+let arr=["aravind","suresh","karthik","ramya","Bhavya"];
+let a=1;
+for(var i in arr){
+  console.log(+i+1,"-",arr[i]);
+}
+for(var i of arr){
+  console.log(a,"-",i);
+  a++;//a=a+1
+}
+
+

@@ -198,7 +198,56 @@ condition?true statement:false statement;
 
 
 
+Hoisting:
+---------
 
+it is a mechanism where all declerations move to the top of the scope before its intialisation.
+
+hoisting will happens differently in var, let and const.
+
+in var case we will get undefined because only decleration part of the var will moves to 
+top of the scope.
+
+
+in let and const, they will also hoist but store in TDZ(temporal dead zone). so we can't access them before its
+
+intialisation.
+
+
+control statements:
+--------------------
+1.looping statements.
+    a.while
+    b.do-while
+    c.for-loop
+    d.for-in 
+        syntax:for(iterator in  str/arr/obj){}
+
+        with for-in loop we can iterate every index in array and string, every key in object.
+
+
+    e.for-of
+        for(iterator of str/array){}
+        used to iterate string and arrays but not object.
+        iterator will store the value as per the index.
+
+2.conditional statements.
+
+
+
+1.let arr=["arvindh","suresh","karthik","ramya","bhavya"];
+
+o/p-->
+1-arvindh
+2-suresh
+3-karthik
+4-ramya
+5-bhavya
+
+using both for-in and for-of loop.
+
+
+2.
 
 
 
