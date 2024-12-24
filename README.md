@@ -220,6 +220,18 @@ control statements:
     a.while
     b.do-while
     c.for-loop
+        1.for repeteting the task 
+        2.for iterating an array/string.here we can start where ever we want and end where ever we want in the string and arrays.
+
+        syntax:
+        --------
+        for(intialisation;condition;iteration)
+        {
+
+            //block of code to be executed
+        }
+
+
     d.for-in 
         syntax:for(iterator in  str/arr/obj){}
 
@@ -247,7 +259,7 @@ o/p-->
 using both for-in and for-of loop.
 
 
-2.
+
 
 
 
