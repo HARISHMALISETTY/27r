@@ -260,10 +260,100 @@ using both for-in and for-of loop.
 
 
 
+while loop and do-while loop:
+-----------------------------
+
+it will iterates based on the condition either it may false or true;
+
+syntax:
+--------
+while(condition){
+
+    set of statements;
+}
+
+
+do-while loop:
+--------------
+
+it will perform the very first task before checking the 
+condition, and performs rest of the tasks based on the 
+condition.
+
+
+do{
+    set of statements;
+}
+while(condition)
 
 
 
 
+In conditionals, we have
+
+a.simple-if
+    if(condition)
+    {
+        set of statements // true block
+    }
+b.if-else
+    if(condition)
+    {
+        set of statements // true block
+    }
+    else
+    {   
+        set of statements // false block
+    }
+c.nested-if
+    if(condition){
+        // statements
+
+            if(condition){
+
+                // statements      // true block
+
+            }
+
+
+    }
+    else{
+
+                // false block
+
+    }
+
+
+
+d.else-if ladder
+    if (condition1){
+        // executes if condition is true
+
+    }
+    else-if(condition2){
+        // executes if cond1 is fail and cond2 is true
+
+    }
+
+    else-if(condition3){
+        // executes if cnd1,cnd2 are fail and cnd3 gets true.
+
+    }
+    else{
+        // executes if all above conditions fails
+
+    }
+
+
+e.switch
+
+break and continue:
+--------------------
+used to control the loops
+
+break--->exit the loop if condition is true.
+
+continue--->skip the particular iteration if the condition is true.
 
 
 
