@@ -80,11 +80,22 @@ for(i=1;i<arr.length;i=i+2){
 }
 
 
+// topics:
+// --------
+// forloop
+
 // task:
 // -----
 // 1.check input string is palindrome or not? using for loop and terinary operator.
 // 2.i/p=["one","two","six","one"]---> o/p:n,w,i,n
 // 3.i/p=["one","two","three","four"]--->o/p:["eno","owt","eerht","ruof"];
 // notes on forloop vs for-in vs for-of
+
+
+
+
+
+
+
 
 
