@@ -132,7 +132,6 @@ for (i = 0; i < arr3.length; i++) {
 
   for (j = arr3[i].length - 1; j >= 0; j--) {
     str += arr3[i][j];
-    
   }
 
   console.log(str);
@@ -143,8 +142,6 @@ for (i = 0; i < arr3.length; i++) {
 // 1.i/p--->let arr3 = ["hello", "welcome", "to", "javascript"];
 // o/p---> op=["olleh","emoclew","ot","tpircsavaj"]
 
-
-//2.let i/p = ["hello", "welcome", "to", "javascript"];
+// 2.let i/p = ["hello", "welcome", "to", "javascript"];
 
 // o/p--->["olleh","welcome","ot","javascript"]
-
