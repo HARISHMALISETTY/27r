@@ -347,6 +347,26 @@ d.else-if ladder
 
 e.switch
 
+switch(exp/value){
+
+case exp1: execution;
+    break;
+
+case exp2 : execution;
+        break;
+
+case exp3 : execution;
+    break;
+
+default: expression;
+
+}
+
+
+
+
+
+
 break and continue:
 --------------------
 used to control the loops
