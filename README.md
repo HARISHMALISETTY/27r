@@ -163,8 +163,7 @@ they are classified into two types:
         eg:array[index].
 
     b.object
-    c.function
-    
+    c.function    
     d.date
     e.regex
 
@@ -376,6 +375,125 @@ break--->exit the loop if condition is true.
 continue--->skip the particular iteration if the condition is true.
 
 
+Functions in javascript:
+------------------------
+
+1.Functions are building blocks for any kind of application
+2.Function contains a block of code which will executes, performs
+certain task and returns the value.
+
+
+// function decleration.
+
+function fun_name()
+{
+
+reusable - code
+
+// performs some task
+
+
+// return value;
+
+}
+
+fun_name()
+
+
+
+
+3.One of the main use of function is re-usability and modularity
+
+
+Basically functions are categorized into two types:
+
+1.Pre-defined
+2.User-Defined
+
+
+Right now, we are discussing about User-defined.
+In user defined functions, we have many types
+
+1.Named functions
+    1.1. Named functions with parameters
+    1.2. Named functions without parameters
+    1.3. Named functions with return
+    1.4. Named functions without return
+    1.5. Named functions with default parameters
+2.anonymous function
+3.variable function-- can not be hoisted
+4.arrow function
+5.Call back functions
+6.Higher-ordered functions
+7.self-invoking/immediately invoking functions
+8.pure functions
+9.impure functions
+10.first-class functions.
+
+named functions:
+-----------------
+
+1.function fun_name(parameters...){
+
+}
+
+
+fun_name(arguments...)
+
+2.anonymous functions
+--------------------
+
+
+2.function (params....){
+
+}
+
+
+variable functions:
+-------------------
+3.var x=function(params...){
+
+
+}
+
+x(args...)
+
+arrow functions:
+-----------------
+
+
+4.1 var x=(params...)=>{ return "value"} // arrow function returning some value using return keyword
+	
+x(args...)
+
+
+4.2 var x=(params...)=>("value") // arrow function returning some value without using return keyword
+
+
+4.3 var x=param=>returning value
+// arrow function with single parameter and single returning value.
+
+
+5.cbf:
+------
+function which passes as a argument to the other function then that can be called as a callback function.
+
+6.higher ordered function:
+----------------------------
+
+function which will accepts other function as a parameter then that can be called as higher order function.
+
+or
+
+function which returns other function also can be called as higher ordered function.
+
+
+
+
+
+
+
+    
 
 
 
@@ -393,6 +511,5 @@ continue--->skip the particular iteration if the condition is true.
 
 
 
-FOR PROVIDING RESPONSE..?
 
 

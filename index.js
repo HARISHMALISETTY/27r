@@ -1,147 +1,131 @@
-// let ip = "orange";
+// // // // function decleration
+// // // // function greeting() {
+// // // //   console.log("hello iam a function");
+// // // // }
 
-// switch (ip) {
-//   case "violet":
-//     console.log("color is green");
-//     break;
+// // // // function invoke/call
 
-//   case "orange":
-//     console.log("color is orange");
+// // // // greeting();
+// // // // debugger;
+// // // // console.log(greeting1());
 
-//   default:
-//     console.log("color is unavailable");
+// // // // function greeting1() {
+// // // //   console.log("hello");
+// // // //   return "hiii";
+// // // //   return "hello00000";
+// // // //  console.log("something");
+// // // // }
 
-//   case "green":
-//     console.log("color is green");
-//     break;
+// // // console.log(demo());
+// // // function demo(){
 
-//   case "blue":
-//     console.log("color is blue");
-//     break;
+// // //   console.log("iam demo");
+// // //   // return "demo here"
+// // // }
 
-//   case "black":
-//     console.log("color is black");
-//     break;
-// }
+// // // function addition(x,y){
 
-// let num = 50;
+// // //   var sum=x+y;
+// // //   return sum;
 
-// switch (num) {
-//   case 100:
-//     console.log("entered num is 100");
-//     break;
+// // // }
 
-//   case 50:
-//     console.log("entered num is 50");
-//     break;
+// // // console.log(sum)
 
-//   case 25:
-//     console.log("entered num is 25");
-//     break;
+// // // // addition(4,5) // function invoking
 
-//   default:
-//     console.log("num is not available");
-// }
+// // // console.log(addition(4,5)) //9
+// // // console.log(addition(10,12)) // 22
+// // // console.log(addition(15,22)) // 37
 
-// let num =75;
+// // // function sample(){
 
-// switch (true) {
-//   case num < 100 && num > 80:
-//     console.log("Firstclass");
-// //     break;
+// // //   console.log("hello iam sample")
+// // // }
 
-// //   case num < 80 && num > 60:
-// //     console.log("second class");
-// //     break;
+// // // sample();
 
-// //   case num < 60 && num > 40:
-// //     console.log("third class");
-// //     break;
+// // function sample(x,a="10000-coders")
+// // {
 
-// //   default:
-// //     console.log("Fail");
+// //   console.log(`${x} from ${a}`)
+
 // // }
 
-// // let arr=[1,4,6];
+// // // sample("naveen")
+// // // sample("praveen")
+// // // sample("sunil")
+// // // sample("ram")
 
-// // arr[24]="hiii";
-// //  console.log(arr.length,"array length");
-// // console.log(arr[2])
+// // // function sample1(a,b)
+// // // {
+// // //   console.log(a*b)
+// // // }
 
-// // let arr=[5,"hii","35",90];
+// // // sample1()
 
-// // arr[12]=125;
+// // // function billing(item1,item2,m_c=5){
 
-// // console.log(arr[10]);
+// // //   let total_bill=item1+item2+m_c;
 
-// // let arr=[1,2,3,4,5]
+// // //   return total_bill;
 
-// // arr[arr.length]=6;
+// // // }
 
-// // console.log(arr)
+// // // console.log(billing(25,45))
 
-// // arr[0]=1;
+// // // console.log(billing(15,35))
 
-// // arr[1]=2;
+// // var x=function (){
 
-// // let arr = [];
-
-// // for (i = 20; i <= 40; i = i + 2) {
-// //   arr[arr.length] = i;
+// //   return "hello"
 // // }
 
-// // console.log(arr);
+// // console.log(x())
 
-// let str = "JAVASCRIPT";
-// let arr = [];
-// for (i = 0; i <= str.length - 1; i++) {
-//   arr[arr.length] = str[i];
-//   // console.log(str[i])
-// }
-// console.log(arr);
-// let arr1 = [];
-// for (i = str.length - 1; i >= 0; i--) {
-//   arr1[arr1.length] = `${str[i]} at index ${i}`;
-// }
+// // var x1=()=>{
 
-//  console.log(arr1)
-//[
-//   ("T at index 9",
-//   "P at index 8 ",
-//   "I at index 7",
-//   "R at index 6",
-//   "C at index 5",
-//   "S at index 4",
-//   "A at index 3",
-//   "V at index 2",
-//   "A at index 1",
-//   "J at index 0")
-// ];
+// //   return "hello"
+// // }
 
-let arr3 = ["hello", "welcome", "to", "javascript"];
+// // // function sample(){}
+// // // var x11=function(){}
+// // // var x2=()=>{}
 
-// o/p:
-// olleh
-// emoclew
-// ot
-// tpircsavaj
+// // var x11 = function (a, b) {
+// //   console.log(a + b);
+// // };
 
-// op=["olleh","emoclew","ot","tpircsavaj"]
-for (i = 0; i < arr3.length; i++) {
-  let str = "";
+// // x11(4, 5);
 
-  for (j = arr3[i].length - 1; j >= 0; j--) {
-    str += arr3[i][j];
+// // var y11 = (x, y) => {console.log(x + y);};
+
+// // y11(1, 2);
+
+// // var z=()=>{return "hello"};
+
+// // var z=()=>("hello");
+
+// // var z=(a,b)=>{ return a+b};
+// // var z=(a,b)=>(a+b)
+
+// var z=a=>a*2;
+
+// console.log(z(4,5))
+
+
+function checkEvenOrOdd(x)
+{
+
+  if (x % 2 == 0) {
+    console.log("x is even");
+  } else {
+    console.log("x is odd");
   }
 
-  console.log(str);
 }
 
-// task:
-// -------
-// 1.i/p--->let arr3 = ["hello", "welcome", "to", "javascript"];
-// o/p---> op=["olleh","emoclew","ot","tpircsavaj"]
+checkEvenOrOdd(125)
+checkEvenOrOdd(124)
+checkEvenOrOdd(12)
 
-// 2.let i/p = ["hello", "welcome", "to", "javascript"];
-
-// o/p--->["olleh","welcome","ot","javascript"]
