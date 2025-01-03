@@ -487,11 +487,31 @@ or
 
 function which returns other function also can be called as higher ordered function.
 
+Scope:
+-----
+In JavaScript, scope defines the accessibility of variables, functions, and objects in your code. It determines where these entities can be accessed and used.
+
+1.global scope:
+Variables declared outside any function or block have global scope. 
+They can be accessed from anywhere within your script.
+2.function scope
+3.block scope
 
 
 
+topics:
+-------
+callback functions-basic implementation
+higher ordered functions--basic implementation
+scope--global and block 
 
 
+
+task:
+-----
+complete pending problems using arrow functions
+practise cbf and hof 
+learn about function scope with proper example
 
     
 

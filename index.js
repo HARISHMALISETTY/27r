@@ -1,131 +1,68 @@
-// // // // function decleration
-// // // // function greeting() {
-// // // //   console.log("hello iam a function");
-// // // // }
+// var x = function () {
+//   console.log("iam a variable func");
+// };
 
-// // // // function invoke/call
+// x();
+// y()
+// console.log(y)
 
-// // // // greeting();
-// // // // debugger;
-// // // // console.log(greeting1());
+// var y=()=>{
+//   console.log("hello")
+//   console.log("welcome")
 
-// // // // function greeting1() {
-// // // //   console.log("hello");
-// // // //   return "hiii";
-// // // //   return "hello00000";
-// // // //  console.log("something");
-// // // // }
+// }
 
-// // // console.log(demo());
-// // // function demo(){
+// console.log(z)
+// const z=3
 
-// // //   console.log("iam demo");
-// // //   // return "demo here"
-// // // }
+// function userName(cbf1,cbf2) {
+//   console.log("iam harish");
+//   cbf1();
+//   cbf2();
 
-// // // function addition(x,y){
+//   return "hello"
+// }
 
-// // //   var sum=x+y;
-// // //   return sum;
+// console.log(userName(
+//   function skill() {
+//     console.log("iam a fullstack developer");
+//   },
+//   function hobbies() {
+//     console.log("i love travelling");
+//   }
+// ))
 
-// // // }
+// here userName is higher ordered function.
+// skill is callback function.
 
-// // // console.log(sum)
+// function demo1(){
 
-// // // // addition(4,5) // function invoking
+//   return function demo2(){
+//     // console.log("helloooo")
+//     return "hello"
+//   }
+// }
 
-// // // console.log(addition(4,5)) //9
-// // // console.log(addition(10,12)) // 22
-// // // console.log(addition(15,22)) // 37
+// // console.log(demo1())
 
-// // // function sample(){
+// let x=demo1();
+// console.log(x())
 
-// // //   console.log("hello iam sample")
-// // // }
+function _1000Coders() {
+  console.log("10000-coders");
 
-// // // sample();
-
-// // function sample(x,a="10000-coders")
-// // {
-
-// //   console.log(`${x} from ${a}`)
-
-// // }
-
-// // // sample("naveen")
-// // // sample("praveen")
-// // // sample("sunil")
-// // // sample("ram")
-
-// // // function sample1(a,b)
-// // // {
-// // //   console.log(a*b)
-// // // }
-
-// // // sample1()
-
-// // // function billing(item1,item2,m_c=5){
-
-// // //   let total_bill=item1+item2+m_c;
-
-// // //   return total_bill;
-
-// // // }
-
-// // // console.log(billing(25,45))
-
-// // // console.log(billing(15,35))
-
-// // var x=function (){
-
-// //   return "hello"
-// // }
-
-// // console.log(x())
-
-// // var x1=()=>{
-
-// //   return "hello"
-// // }
-
-// // // function sample(){}
-// // // var x11=function(){}
-// // // var x2=()=>{}
-
-// // var x11 = function (a, b) {
-// //   console.log(a + b);
-// // };
-
-// // x11(4, 5);
-
-// // var y11 = (x, y) => {console.log(x + y);};
-
-// // y11(1, 2);
-
-// // var z=()=>{return "hello"};
-
-// // var z=()=>("hello");
-
-// // var z=(a,b)=>{ return a+b};
-// // var z=(a,b)=>(a+b)
-
-// var z=a=>a*2;
-
-// console.log(z(4,5))
-
-
-function checkEvenOrOdd(x)
-{
-
-  if (x % 2 == 0) {
-    console.log("x is even");
-  } else {
-    console.log("x is odd");
-  }
-
+  return function () {
+    console.log("27r-batch");
+    return "wonderful batch";
+  };
 }
 
-checkEvenOrOdd(125)
-checkEvenOrOdd(124)
-checkEvenOrOdd(12)
+let op = _1000Coders();
+console.log(op());
+
+
+// function which takes another function as a arguement and also 
+// returns another function,
+// then it can be called as a higher-ordered function
+
 
