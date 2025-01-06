@@ -1,68 +1,52 @@
-// var x = function () {
-//   console.log("iam a variable func");
-// };
+// function findLength(x) {
+//   console.log(x.length);
+// }
 
-// x();
-// y()
-// console.log(y)
+// findLength([1, 2, 3, 4, 5]);
+// findLength([1, 2, 3]);
+// findLength(["a", "b", "c"]);
 
-// var y=()=>{
-//   console.log("hello")
-//   console.log("welcome")
+
+// i want to find num is even or odd using functions.
+
+// function evenOrOdd(x){
+
+//   if(x%2==0){
+//     // console.log("it is even")
+//     return "it is even"
+//   }
+//   else{
+//    return "it is odd"
+//   }
 
 // }
+// console.log(evenOrOdd(4))
+// console.log(evenOrOdd(5))
+
+
+
+// function cable(user,stream="live tv")
+// {
+
+// console.log(`${user} is watching ${stream}`)
+
+
+// }
+
+// cable("srikanth")
+// cable("karthik","prime")
+
+// demo();
+// function demo(){
+//   console.log("hello world")
+// }
+
 
 // console.log(z)
-// const z=3
 
-// function userName(cbf1,cbf2) {
-//   console.log("iam harish");
-//   cbf1();
-//   cbf2();
-
-//   return "hello"
+// var z=function(){
+//   console.log("hiii")
 // }
-
-// console.log(userName(
-//   function skill() {
-//     console.log("iam a fullstack developer");
-//   },
-//   function hobbies() {
-//     console.log("i love travelling");
-//   }
-// ))
-
-// here userName is higher ordered function.
-// skill is callback function.
-
-// function demo1(){
-
-//   return function demo2(){
-//     // console.log("helloooo")
-//     return "hello"
-//   }
-// }
-
-// // console.log(demo1())
-
-// let x=demo1();
-// console.log(x())
-
-function _1000Coders() {
-  console.log("10000-coders");
-
-  return function () {
-    console.log("27r-batch");
-    return "wonderful batch";
-  };
-}
-
-let op = _1000Coders();
-console.log(op());
-
-
-// function which takes another function as a arguement and also 
-// returns another function,
-// then it can be called as a higher-ordered function
-
-
+// var x
+console.log(x)
+var x=25
