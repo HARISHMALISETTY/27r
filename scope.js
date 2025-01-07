@@ -12,9 +12,6 @@
 
 // // console.log(x1)
 
-
-
-
 // // // demo()
 
 // // // function demo() {console.log(a)}
@@ -28,16 +25,12 @@
 // // //   console.log(c)
 // // // }
 
-
-
 // // if(true){
 
 // //   let a="hello" // declared in a block
 // // }
 
-
 // // console.log(a)
- 
 
 // function sample(){
 
@@ -45,8 +38,6 @@
 // }
 
 // console.log(a)
-
-
 
 // let user="karthik";
 
@@ -57,7 +48,6 @@
 // }
 
 // sample();
-
 
 // var x=()=>{
 
@@ -70,6 +60,17 @@
 
 // for(i=0;i<=3;i++){
 
-  // let x="hii";
+// let x="hii";
 // }
+
+if (true) {
+  let x = 45;
+}
+
+function demo() {
+  console.log(x);
+}
+
+demo();
+
 
