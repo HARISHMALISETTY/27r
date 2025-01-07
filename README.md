@@ -518,8 +518,25 @@ learn about function scope with proper example
 
 
 
+DOM:
+-----
 
+DOM METHODS:
+-------------
+FOR GETTING HTML ELEMENTS we have:
+1.getElementById();--->it will returns the single element.
+2.getElementsByTagName()-->it will returns all matching elements as a collection
+3.getElementsByClassName()-->it will returns all matching elemtns as a collection
+4.queryselector()-->with this we can get based on id/class/tagname it will returns only first matching element.
+5.queryselectorAll()-->with this we can get based on id/class.tagname, it will returns all matched elements.
 
+innerHTML:
+------------
+Returns the HTML markup and text content of an element, including spacing and line breaks. It's used to manipulate the structure and content of an element with HTML. 
+
+innerText:
+----------
+Returns the text content of an element, excluding HTML tags, hidden content, and formatting. It's used to see what's in the element without the formatting
 
 
 

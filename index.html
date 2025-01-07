@@ -1,52 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="./index.js" defer></script>
-  <style>
-    h2{
-      opacity: 0.5;
-    }
-  </style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1 class="head1" id="h1">hello</h1>
+  <p class="head1" id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, officiis quas facere error qui laboriosam libero distinctio, quibusdam eaque ratione ex a maiores optio earum. Laboriosam exercitationem molestias eius impedit.</p>
+  <p class="head1" id="p2">hii</p>
+
+  <button>click me</button>
+
+<script>
+  // getting all elements
+  let x1=document.getElementsByClassName("head1")
+  let x2=document.getElementById("p1")
+  let x3=document.getElementsByTagName("p")
+
+  // x3[1].textContent="something"
+
+  // console.log(x3[1].textContent)
+  // x2.innerHTML="helloooooooooooooooo"
+  // console.log(x2.innerHTML)
+
+  // console.log(x1[1].innerHTML)
+
+  // x1[1].innerHTML="<u>hiiiii</u>"
+
+  // document.write("helloo,welcome"); 
+
+  // document.write("<br>")
+
+  // document.write("hiiii")
+
+  // document.write("<hr>")
+
+</script>
+
   
-  </head>
-  <body>
-    <script>
-    //   var str = "welhellocome";
-
-    //   console.log(str.length);
-
-    //   var a=+prompt("enter the value");
-
-    //   alert(`entered value is ${a}`);
-
-    //     console.log(25)
-    //   console.log(a,typeof a)
-
-    //   console.log(4+5)
-
-    //   console.log(str[str.length - 2]+" and "+ str[2]);
-    //   console.log(`${str[str.length - 2]} and ${str[2]}`)
-    </script>
-
-    <h2>var a,let b, const c</h2>
-
-    <h1>
-      console.log(a);--- o/p: undefined
-      <br><br>
-
-      console.log(b);-- error: cannot access before intilisation
-<br><br>
-console.log(c)
-    </h1>
-
-<h1>var a=45</h1>
-
-<h1>let b=5</h1>
-
-
-<h1>const c=3.14</h1>
-  </body>
+</body>
 </html>
