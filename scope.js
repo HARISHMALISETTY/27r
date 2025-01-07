@@ -1,44 +1,75 @@
-var a = 2;
+// // var a = 123;
 
-let b = 4;
+// // let b = 456;
 
-const c = 6;
+// // const c = 102;
 
-// here a,b,c are having global scope.
+// // if(true){
 
-// function demo() {
-//   console.log(a);
+// //   const x1="hello";
+
+// // }
+
+// // console.log(x1)
+
+
+
+
+// // // demo()
+
+// // // function demo() {console.log(a)}
+
+// // // for (let i = 0; i <= 2; i++) {
+
+// // //   console.log(b)
+// // // }
+
+// // // if (true) {
+// // //   console.log(c)
+// // // }
+
+
+
+// // if(true){
+
+// //   let a="hello" // declared in a block
+// // }
+
+
+// // console.log(a)
+ 
+
+// function sample(){
+
+//   const a=25;
 // }
 
-// demo();
+// console.log(a)
 
-// if (true) {
-//   console.log(b);
+
+
+// let user="karthik";
+
+// const city="hyd";
+
+// function sample(){
+//   console.log(`${user} from ${city}`)
 // }
 
-// if (true) {
-//   console.log(c);
+// sample();
+
+
+// var x=()=>{
+
+//   var x1="hello"
 // }
 
-//1.whenever we declare any varaibles globally in particular script, then they can
-// be accessible around that script.
+// console.log(x1)
 
-// now, lets declare variables in a block.
+// console.log(x)
 
-if (true) {
-  var a1 = "iam var";
-  let b1 = "iam let";
-  const c1 = "iam const";
-  console.log(b1)
-}
-console.log(a1)
-// var will have global scope if we declare in a block.
+// for(i=0;i<=3;i++){
 
-// console.log(b1) 
-// let will have block scope only but not global  because it is declared inside a block.
-
-// console.log(c1);
-// const will have block scope only but not global  because it is declared inside a block.
-
-
+  // let x="hii";
+// }
 
