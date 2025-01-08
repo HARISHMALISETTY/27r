@@ -1,44 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
+<html>
+  <head>
+    <title>Sample HTML Document</title>
+    <style>
+      .highlight {
+        background-color: yellow;
+      }
+      .intro {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      #mainTitle {
+        color: blue;
+        text-align: center;
+      }
+      #infoSection {
+        padding: 10px;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="first">
+      <li>list1</li>
+      <li>list2</li>
+    </ul>
 
-  <h1 class="head1" id="h1">hello</h1>
-  <p class="head1" id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, officiis quas facere error qui laboriosam libero distinctio, quibusdam eaque ratione ex a maiores optio earum. Laboriosam exercitationem molestias eius impedit.</p>
-  <p class="head1" id="p2">hii</p>
+    <div>
+      <ul class="first">
+        <li id="li1" onclick="change()">second-1</li>
+        <li>second-2</li>
+      </ul>
+    </div>
 
-  <button>click me</button>
+    <button id="btn1" onclick="addDiv()">click me</button>
+    <button onclick="remove()">remove</button>
+    <script>
+      let li = document.getElementById("li1");
 
-<script>
-  // getting all elements
-  let x1=document.getElementsByClassName("head1")
-  let x2=document.getElementById("p1")
-  let x3=document.getElementsByTagName("p")
+      // function change()
+      // {
+      //   li.style.color = "white";
+      //   li.style.backgroundColor = "black";
+      //   li.style.fontSize = "120px";
+      //   li.style.fontFamily = "calibri";
+      //   li.style.border = "3px solid blue";
+      //   li.style.borderRadius = "10%";
+      // }
 
-  // x3[1].textContent="something"
+      // let x=document.getElementsByClassName("highlight");
+      // console.log(x[1].innerHTML)
 
-  // console.log(x3[1].textContent)
-  // x2.innerHTML="helloooooooooooooooo"
-  // console.log(x2.innerHTML)
+      // let para=document.getElementById("p1");
+      // console.log(para.textContent);
 
-  // console.log(x1[1].innerHTML)
+      // let ele = document.querySelector("#infoSection .highlight");
 
-  // x1[1].innerHTML="<u>hiiiii</u>"
+      // let ele1 = document.querySelectorAll("div .first li");
+      // console.log(ele1[0].innerHTML);
+      // ele1[0].innerHTML="hiiiiiiiiiiiiiiiiiiiiiiii"
 
-  // document.write("helloo,welcome"); 
+      // console.log(ele);
+      // for adding div
+      let div1 = document.createElement("div");
+      let image = document.createElement("img");
+      let desc = document.createElement("p");
+      let btn1 = document.getElementById("btn1");
+      let title = document.createElement("h1");
+      function addDiv() {
+        btn1.innerHTML = "remove";
+        div1.style.height = "600px";
+        div1.style.width = "350px";
+        div1.style.border = "3px solid red";
+        document.body.appendChild(div1);
+        image.setAttribute("src", "./images/img.jpg");
+        image.style.height = "60%";
+        image.style.width = "100%";
+        div1.append(image);
+        title.innerHTML = "WEATHER";
+        div1.append(title);
 
-  // document.write("<br>")
+        desc.innerHTML =
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nesciunt at, illo laboriosam consectetur, nihil aspernatur eveniet nam delectus earum explicabo rem placeat eligendi! Possimus natus nisi minima voluptas optio!";
+        div1.append(desc);
+      }
 
-  // document.write("hiiii")
+      // function remove() {
+      //   div1.removeChild(desc);
 
-  // document.write("<hr>")
+      //   // div1.remove()
+      // }
 
-</script>
-
-  
-</body>
+      function remove() {
+        // div1.removeChild(image)
+        // image.removeAttribute("src")
+        // div1.removeChild(title);
+        // div1.remove()
+        image.removeAttribute("src")
+        
+      }
+    </script>
+  </body>
 </html>
