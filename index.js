@@ -1,92 +1,144 @@
-// // function findLength(x) {
-// //   console.log(x.length);
-// // }
+// // // // string methods in js
+// // // // let str = "welcome";
+// // // // let op = str.charAt(-2); // returns nothing
 
-// // findLength([1, 2, 3, 4, 5]);
-// // findLength([1, 2, 3]);
-// // findLength(["a", "b", "c"]);
+// // // // let op1 = str[-2]; // returns undefined
 
-// // i want to find num is even or odd using functions.
+// // // // let op2 = str.at(-2); //returns character from right to left begins with index -1
+// // // // console.log(op2);
 
-// // function evenOrOdd(x){
+// // // //slice method in js
 
-// //   if(x%2==0){
-// //     // console.log("it is even")
-// //     return "it is even"
-// //   }
-// //   else{
-// //    return "it is odd"
-// //   }
+// // // let str1 = "something";
 
-// // }
-// // console.log(evenOrOdd(4))
-// // console.log(evenOrOdd(5))
+// // // let op = str1.slice(-9, -5);
 
-// // function cable(user,stream="live tv")
-// // {
+// // // // this will extracts a part from the string
+// // // // based on the indexes and returns as a new string
+// // // // but it won't modifies existing string
 
-// // console.log(`${user} is watching ${stream}`)
+// // // // console.log(str1)
 
-// // }
+// // // // console.log(op)
 
-// // cable("srikanth")
-// // cable("karthik","prime")
-
-// // demo();
-// // function demo(){
-// //   console.log("hello world")
-// // }
-
-// // console.log(z)
-
-// // const z=function(){
-// //   console.log("hiii")
-// // }
-
-// // var x
-// // console.log(x)
-// // var x=25
-
-// var x = function () {};
-
-// var x1 = () => {}; // arrow function
-
-// // wap to find input string is palindrome or not.
-
-// // isPalindrome("level");
-// // console.log(isPalindrome());
-// // var isPalindrome=()=>{console.log("hiii")};
-
-// // var isPalindrome=(str)=> {
-// //   let str1 = "";
-// //   for (i = str.length - 1; i >= 0; i--) {
-// //     str1 += str[i];
-// //   }
-// //   if (str1 == str) {
-// //     console.log(`${str} is a palindrome`);
-// //   } else {
-// //     console.log(`${str} is not a palindrome`);
-// //   }
-// // }
-
-// // isPalindrome("level");
-// // isPalindrome("harish");
-// // isPalindrome("something")
-
-// // var x=45;
-// // x();
-
-// // var x=()=>{} // arrow function
-
-// function demo(x) {
-//   console.log("iam demo");
-
-//   x();
-// }
-
-// demo(function sample() {
-//   console.log("iam sample");
-// });
+// // // console.log(str1.charCodeAt(2)); 
+// // // // returns ascii/unicode value of a character based on the index;
 
 
 
+
+// // // let str1=str.substring(-1,8) // negative values can be treat as a zero.
+// // // console.log(str1)
+
+// // // let str1=str.slice(3); // returns rest of the string from '3' index
+
+// // // let str1=str.substring(4) // returns rest of the string from '4' index
+
+
+// // //let str1=str.slice(-4) // returns rest of the string from '-4' index
+
+// // // let str1=str.substring(-4)// returns entire string, because -4 will consider as a 0.
+
+// // let str="javascript";
+// // //let str1=str.substr(3,6) 
+// // // first parameter is the starting index and 
+// // // second param is length of the string to be extract
+
+// // // let str1=str.substr(-5) // returns rest of the string from index '-5'.
+
+// // // let str1=str.substr(2) // returns rest of the string from index '2'
+// // // console.log(str1) //
+
+// // let str1="helloWoRLD";
+
+// // // console.log(str1.toUpperCase()) // returns complete string in uppercase
+
+// // // console.log(str1.toLowerCase()) // returns completer string in lowercase
+
+
+// // // let str2="html";
+
+// // // let str3="css";
+
+// // // let str4="js";
+
+// // // // str2+str3+str4;
+
+// // // let result=str2.concat(str3,str4,"some","react","node")
+// // // console.log(result) // concats all the strings
+
+
+// // let str="   java  ";
+
+// // console.log(str.length);
+
+// // let str1=str.trim();// returns new string by removing empty spaces at starting and ending.
+
+// // let str1=str.trimStart(); // returns new string by removing empty space at starting only
+
+// // let str1=str.trimEnd();// returns new string by removing empty space at ending only
+
+// // console.log(str1.length);
+
+// // let str="javascript";
+// // // let str1=str.padStart(22,"hi ") 
+// // // adds hi at the starting of the string to make total length 22
+
+// // let str1=str.padEnd(20,"so");
+// // // adds so at the end of the string to make total length 20.
+
+// // console.log(str1)
+
+
+// // let str="hello";
+
+// // console.log(str.repeat(3)) // makes string to repeat 3 times, here 3 is a count.
+
+
+// let str="FRONTEND developer will works on FRONTEND part beacuse he is  frontend developer";
+
+// // let str1=str.replace("frontend","fullstack"); 
+
+// // here it will replaces first match of frontend with fullstack
+
+// let str1=str.replace(/frontend/ig,"fullstack")
+
+// // replaces all matched strings in case insensitive with fullstack.
+
+// console.log(str1)
+
+// let ip="jav,asc,ript";
+// let op=ip.split(",");
+// // split the characters of a string based on the seperator(,)
+// //  and insert into the array.
+// // so we can say with the help of split, we can convert a string into array.
+// console.log(op)
+
+
+// string search methods:
+
+
+// let op=str.indexOf("q"); 
+// returns index of the character in string if it is present 
+// and returns -1 if not available
+
+
+// let op1=str.indexOf("a",2) // second arguments tells from where it should start searching.
+
+// let op1=str.indexOf(/A/i) 
+// this will not be allow in indexof.. 
+// so here searching will happens in case senstive manner
+// let str="javascriapt";
+
+// let op1=str.lastIndexOf("k"); 
+// returns the index of last occurrance of character in the string 
+// if it is available and returns -1 if it is not avaialable
+
+ let str="javascript";
+
+ let op1=str.search(/A/i)
+
+ // here second arguement will be not consider where it can be consider in indexof method
+ // here we can make search as caseinsensitive by adding //i flag where it cannot works in indexof
+
+console.log(op1)

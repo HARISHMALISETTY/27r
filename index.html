@@ -1,104 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Sample HTML Document</title>
-    <style>
-      .highlight {
-        background-color: yellow;
-      }
-      .intro {
-        font-size: 18px;
-        font-weight: bold;
-      }
-      #mainTitle {
-        color: blue;
-        text-align: center;
-      }
-      #infoSection {
-        padding: 10px;
-        border: 1px solid #ccc;
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
   </head>
   <body>
-    <ul class="first">
-      <li>list1</li>
-      <li>list2</li>
-    </ul>
+    <div id="div1" style="height: 125px; width: 125px; border: 2px solid red"></div>
 
-    <div>
-      <ul class="first">
-        <li id="li1" onclick="change()">second-1</li>
-        <li>second-2</li>
-      </ul>
-    </div>
-
-    <button id="btn1" onclick="addDiv()">click me</button>
-    <button onclick="remove()">remove</button>
     <script>
-      let li = document.getElementById("li1");
 
-      // function change()
-      // {
-      //   li.style.color = "white";
-      //   li.style.backgroundColor = "black";
-      //   li.style.fontSize = "120px";
-      //   li.style.fontFamily = "calibri";
-      //   li.style.border = "3px solid blue";
-      //   li.style.borderRadius = "10%";
-      // }
+      let div1=document.getElementById("div1");
+      div1.style.transform="rotate(125deg)"
+      // let str="hello";
 
-      // let x=document.getElementsByClassName("highlight");
-      // console.log(x[1].innerHTML)
+      // console.log(typeof str)
 
-      // let para=document.getElementById("p1");
-      // console.log(para.textContent);
+      // let str1=new String("hii")
+      // console.log(typeof str1)
 
-      // let ele = document.querySelector("#infoSection .highlight");
+      // console.log(str1);
 
-      // let ele1 = document.querySelectorAll("div .first li");
-      // console.log(ele1[0].innerHTML);
-      // ele1[0].innerHTML="hiiiiiiiiiiiiiiiiiiiiiiii"
-
-      // console.log(ele);
-      // for adding div
-      let div1 = document.createElement("div");
-      let image = document.createElement("img");
-      let desc = document.createElement("p");
-      let btn1 = document.getElementById("btn1");
-      let title = document.createElement("h1");
-      function addDiv() {
-        btn1.innerHTML = "remove";
-        div1.style.height = "600px";
-        div1.style.width = "350px";
-        div1.style.border = "3px solid red";
-        document.body.appendChild(div1);
-        image.setAttribute("src", "./images/img.jpg");
-        image.style.height = "60%";
-        image.style.width = "100%";
-        div1.append(image);
-        title.innerHTML = "WEATHER";
-        div1.append(title);
-
-        desc.innerHTML =
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nesciunt at, illo laboriosam consectetur, nihil aspernatur eveniet nam delectus earum explicabo rem placeat eligendi! Possimus natus nisi minima voluptas optio!";
-        div1.append(desc);
-      }
-
-      // function remove() {
-      //   div1.removeChild(desc);
-
-      //   // div1.remove()
-      // }
-
-      function remove() {
-        // div1.removeChild(image)
-        // image.removeAttribute("src")
-        // div1.removeChild(title);
-        // div1.remove()
-        image.removeAttribute("src")
-        
-      }
+      // console.log(str)
     </script>
   </body>
 </html>
