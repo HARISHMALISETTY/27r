@@ -548,6 +548,35 @@ Returns the text content of an element, excluding HTML tags, hidden content, and
 
 
 
+//remaining string methods
+
+// array methods--2 classes
+
+// object methods,numbers and math--1 class
+
+// date methods
+
+// events implmentation with call back functions.
+
+// few more events
+
+// event bubbling, event capturing, event propogation.
+
+// bom,web storages
+
+// starts assigning projects
+
+// execution context in js
+
+// asynchronous js
+
+// http requests/calls
+
+// handling asynchronous operations using promises/callbacks/async and await
+
+// event loop
+
+
 
 
 

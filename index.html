@@ -1,27 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div id="div1" style="height: 125px; width: 125px; border: 2px solid red"></div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="changeText()">click me</button>
+  <button onclick="addContent()">add content</button>
+  <button onclick="removeContent()">remove child</button>
 
-    <script>
+  <div id="div1" style="background-color: red;height: 150px;padding: 45px;">
+      <h1 id="head1">hello</h1>
+      <p id="p1">iam paragraph</p>
 
-      let div1=document.getElementById("div1");
-      div1.style.transform="rotate(125deg)"
-      // let str="hello";
+  </div>
 
-      // console.log(typeof str)
+  <script>
 
-      // let str1=new String("hii")
-      // console.log(typeof str1)
+    let x=document.getElementById("head1")
+    // console.log(x.innerHTML);
+    x.innerHTML="somesh";
+    x.style.backgroundColor="orange";
+    let div=document.getElementById("div1");
 
-      // console.log(str1);
+    function removeContent(){
+      // div.removeChild(x); this will removes child from the div
+      div.remove() // this will removes entire div 
+    }
 
-      // console.log(str)
-    </script>
-  </body>
+    
+
+    function changeText(){
+      x.innerHTML="RAMESH";
+      x.style.backgroundColor="green"
+      x.style.color="white"
+
+    }
+
+    function addContent(){
+     let x= document.createElement("h2");
+     x.innerHTML="WELCOME TO DOM";
+     div.append(x)
+    }
+
+  
+  </script>
+
+  
+</body>
 </html>
