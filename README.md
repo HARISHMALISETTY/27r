@@ -520,6 +520,9 @@ learn about function scope with proper example
 
 DOM:
 -----
+html---
+
+
 
 DOM METHODS:
 -------------
