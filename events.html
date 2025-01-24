@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <button onclick="demo()">click me</button> -->
+    <form id="myForm">
+      <input type="text" /><br /><br />
+      <input type="text" /><br /><br />
+      <input type="text" /><br /><br />
+      <input type="text" /><br /><br />
+      <input type="submit" />
+    </form>
+
+    <!-- <button id="btn">click me</button> -->
+    <h1 id="otp"></h1>
+
+    <!-- <script>
+      function demo() {
+        let x = Math.random() * 1000000;
+        let otp = Math.floor(x);
+        let clr;
+        if (otp < 100000) {
+          clr = otp + 100000;
+        } else clr = otp;
+
+        document.body.style.backgroundColor = `#${clr}`;
+        let gen_otp=document.getElementById("otp");
+        gen_otp.innerHTML=clr
+      }
+    </script> -->
+
+    <!-- <script>
+      let btn = document.getElementById("btn");
+      btn.addEventListener("click", function () {
+        let x = Math.random() * 1000000;
+        let otp = Math.floor(x);
+        let clr;
+        if (otp < 100000) {
+          clr = otp + 100000;
+        } else clr = otp;
+
+        document.body.style.backgroundColor = `#${clr}`;
+        let gen_otp = document.getElementById("otp");
+        gen_otp.innerHTML = clr;
+      });
+    </script> -->
+
+    <!-- <script>
+        let btn=document.getElementById("btn");
+        let h1=document.getElementById("otp");
+
+        btn.addEventListener("click",function (){
+          
+            h1.innerHTML="hellooo"
+        })
+
+        btn.addEventListener("mouseover",function(){
+            btn.style.backgroundColor="red"
+        })
+
+        btn.addEventListener("mouseleave",function(){
+            btn.style.backgroundColor="white"
+        })
+
+        btn.addEventListener("dblclick",function(){
+            h1.innerHTML="double clicked"
+        })
+
+
+    </script> -->
+
+    <script>
+    //   let form = document.getElementById("myForm");
+    //   let h1 = document.getElementById("otp");
+    //   form.addEventListener("submit", function (e) {
+    //     e.preventDefault();
+    //     h1.innerHTML = `user entered ${e.target[0].value}, ${e.target[1].value},${e.target[2].value},${e.target[3].value}`;
+    //   });
+
+
+    let str=1-2+3-4+6-9;
+
+    console.log(eval(str))
+    </script>
+
+
+  </body>
+</html>
+
+<!-- 
+1.inline events
+<button onclick="demo()"></button>
+
+2.addeventlistener method
+
+btn.addEventListener("event_name",cbf-def)
+-->
