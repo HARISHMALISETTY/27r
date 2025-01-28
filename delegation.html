@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="parent">
+      <li id="li1">list1</li>
+      <li id="li2">list2</li>
+      <li id="li3">list3</li>
+    </ul>
+
+    <p id="text"></p>
+    <script>
+      let parent = document.getElementById("parent");
+      let child1 = document.getElementById("li1");
+      let child2 = document.getElementById("li2");
+      let child3 = document.getElementById("li3");
+      let show = document.getElementById("text");
+
+      //   child1.addEventListener("click", (e) => {
+      //     e.target.style.backgroundColor = "red";
+      //   });
+      //   child2.addEventListener("click", (e) => {
+      //     e.target.style.backgroundColor = "red";
+      //   });
+      //   child3.addEventListener("click", (e) => {
+      //     e.target.style.backgroundColor = "red";
+      //   });
+
+      parent.addEventListener("click", (e) => {
+        console.log(e.target.innerHTML);
+        show.innerHTML = e.target.innerHTML;
+        // e.target.style.backgroundColor="red";
+        // show.innerHTML=`${e.target.innerHTML} is clicked`;
+      });
+    </script>
+  </body>
+</html>

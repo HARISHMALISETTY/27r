@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn">click me</button>
+
+    <!-- BOM:
+     1.WINDOW
+     2.DOCUMENT---it is nothing but DOM itself
+     3.LOCATION--
+     4.HISTORY 
+     5.NAVIGATOR
+     6.SCREEN
+     -->
+    <script>
+      // window.alert("hello javascript")
+      // window.prompt()
+      // let op=window.confirm("are u sure to want to exit")
+      // console.log(op)
+      // let op=location.port;
+      // console.log(op);
+
+      let username = "harish";
+      let email = "harish@gmail.com";
+      let btn = document.getElementById("btn");
+      let text=document.createElement("p")
+      btn.addEventListener("click", () => {
+        // location.assign("https://www.amazon.in/")
+        // location.replace("https://www.amazon.in/")
+        // window.open("https://www.amazon.in/")
+        // window.close()
+        // console.log(navigator.appVersion)
+        // location.reload()
+        // history.back()
+        // history.forward()
+
+        // sessionStorage.setItem("name",username);
+        // localStorage.setItem("email",email);
+        // localStorage.removeItem("email")
+
+        // let userInfo = { username: username, user_email: email };
+
+        // let x=localStorage.getItem("email");
+        // text.innerHTML=x;
+        // document.body.append(text)
+        // localStorage.setItem("userDetails",userInfo);
+      });
+
+      // web storages/browser level storages
+      // local storage
+      // to insert data-->setitem()
+      // to retrieve or read the data---> getitem()
+      //session storage
+    </script>
+  </body>
+</html>
