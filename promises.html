@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let bikeAvailable = true;
+      //   let pr=new Promise((resolve, reject) => {
+      //     if (bikeAvailable) {
+      //       resolve("i will come to movie tomorrow");
+      //     } else {
+      //       reject("sorry iam unable to come");
+      //     }
+      //   });
+
+      // pr.then((x)=>{console.log(x)}).catch((x)=>{console.log(x)})
+
+      function html() {
+        return new Promise((res, rej) => {
+          setTimeout(() => {
+            res("learn html");
+          }, 2000);
+        });
+      }
+
+      function css() {
+        return new Promise((res, rej) => {
+          setTimeout(() => {
+            res("learn css");
+          }, 3000);
+        });
+      }
+
+      function js() {
+        return new Promise((res, rej) => {
+          setTimeout(() => {
+            res("learn js");
+          }, 1000);
+        });
+      }
+
+      //  html().then((x)=>{console.log(x)}).catch((e)=>{console.log(e)});
+      //  css().then((x)=>{console.log(x)}).catch((e)=>{console.log(e)});
+      //  js().then((x)=>{console.log(x)}).catch((e)=>{console.log(e)});
+
+      html()
+        .then((x) => {
+          console.log(x);
+          css().then((x) => {
+            console.log(x);
+            js().then((x) => {
+              console.log(x);
+            });
+          });
+        })
+        .catch();
+    </script>
+  </body>
+</html>

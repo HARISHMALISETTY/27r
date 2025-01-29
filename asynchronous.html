@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function html(cbf) {
+        setTimeout(() => {
+          console.log("learn html");
+          cbf();
+        }, 1500);
+      }
+
+      function css(cbf) {
+        setTimeout(() => {
+          console.log("learn css");
+          cbf();
+        }, 750);
+      }
+
+      function js() {
+        setTimeout(() => {
+          console.log("learn js");
+        }, 1250);
+      }
+
+      html(() => {
+        return css(() => {
+          return js();
+        });
+      });
+    </script>
+  </body>
+</html>

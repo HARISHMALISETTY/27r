@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 35px;
+            border: 3px solid red;
+            display: inline-block;
+            padding: 12px;
+            /* border-radius: 50%; */
+        }
+    </style>
+</head>
+<body>
+    <p id="p1"></p>
+    <video id="v1" autoplay controls src="" height="250" width="250"></video>
+
+    <script>
+        let i=3;
+        let timer=document.getElementById("p1")
+        let videoElement=document.getElementById("v1")
+        let timerId=setInterval(() => {
+            timer.innerHTML=`skip add in ${i--}`
+            if(i<0){
+                clearInterval(timerId);
+                timer.style.display="none"
+                videoElement.src="./videos/v1.mp4"
+
+            }
+        }, 1000);
+    </script>
+    
+
+</body>
+</html>
