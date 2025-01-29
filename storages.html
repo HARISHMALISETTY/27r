@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // localStorage.setItem("data","value")
+        // sessionStorage.setItem("data","value");
+        // json--javascript object notation
+
+        //{"key":"value","key":"value"}
+        //[{},{},{}].
+
+        // let obj={"name":"harish"};
+
+        // localStorage.setItem("data",JSON.stringify(obj));
+
+        // let storedData=localStorage.getItem("data");
+
+        // console.log(JSON.parse(storedData))
+
+
+        // let input=[1,2,3,4];
+
+        // let obj={"username":"karthik","city":"hyd"}
+
+        // localStorage.setItem("data",JSON.stringify(obj));
+
+        // let storedData=localStorage.getItem("data");
+
+        // console.log(JSON.parse(storedData).username)
+        // console.log(JSON.parse(storedData).city)
+
+        // [],{}
+
+        let userInfo={"name":"suresh","gender":"male","email":"suresh@gmail.com"};
+
+        let userDetails=JSON.parse(localStorage.getItem("data"))||[]
+        
+        userDetails.push(userInfo)
+
+        localStorage.setItem("data",JSON.stringify(userDetails));
+
+        let localStorageData=JSON.parse(localStorage.getItem("data"));
+        console.log(localStorageData)
+        localStorageData.map((x)=>{
+            console.log(x)
+
+        })
+        
+
+
+    </script>
+
+
+    
+</body>
+</html>

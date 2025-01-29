@@ -610,6 +610,19 @@ Returns the text content of an element, excluding HTML tags, hidden content, and
 
 
 
+JSON--is a javascript object notation, useful to store data and transport data between two applications.
+
+JSON.stringify() is used to convert array/object to string
+
+JSON.parse() is used to convert string to array/object(its original type).
+
+JSON is a platform independent data type.
+
+we will use in database communication,API calls.
+
+response which we get from API also will be in JSON format only.
+
+it can be called as a universal data type in transferring data and storing data.
 
 
 
