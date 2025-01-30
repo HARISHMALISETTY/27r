@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function frontEnd() {
+        return new Promise((res, rej) => {
+          setTimeout(() => {
+            if (true) {
+              res("become a frontend developer");
+            } else {
+              rej("not able to become");
+            }
+          }, 1500);
+        });
+      }
+
+      function backEnd() {
+        return new Promise((res, rej) => {
+          setTimeout(() => {
+            if (true) {
+              res("become a backnd devlper");
+            } else {
+              rej("not able to become");
+            }
+          }, 1000);
+        });
+      }
+
+      function fullStack() {
+        return new Promise((res, rej) => {
+          setTimeout(() => {
+            if (true) {
+              res("fullstack dev");
+            } else {
+              rej("not able to become");
+            }
+          }, 1200);
+        });
+      }
+
+      frontEnd()
+        .then((x) => {
+          console.log(x);
+          return backEnd();
+        })
+        .then((x) => {
+          console.log(x);
+          return fullStack();
+        })
+        .then((x) => {
+          console.log(x);
+        })
+        .catch((x)=>{console.log(x)});
+    </script>
+  </body>
+</html>
+
+
+<!-- 
+
+1.from frontend we can make requests
+2.those requests can be send to backend nothing but servers through APIs
+3.In backend, there will be business logic which makes communication with database and get 
+required data from the database and customize it as per users request and provide back it 
+to the frontend as a response in JSON format.
+4.once we get the response from the backend and then in frontend we will use html,css and js
+to display the data.
+
+5.we can say in frontend we will integrate the APIs
+6.in backend, we will develop APIs.
+
+
+
+
+-->

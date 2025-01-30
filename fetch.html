@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let data = fetch("https://jsonplaceholder.typicode.com/posts");
+      //   console.log(data);
+
+      //   data
+      //     .then((x) => x.json())
+      //     .then((x) =>{
+      //         let res=x;
+      //         res.map((x)=>{console.log(x.title)})
+      //     })
+      //     .catch((x)=>{console.log(x)});
+
+      let main_div=document.createElement("div");
+      document.body.append(main_div);
+      main_div.style.display="flex";
+      main_div.style.flexWrap="wrap";
+      main_div.style.justifyContent="center";
+      main_div.style.gap="5px"
+      let data = fetch("https://679af5f9747b09cdccd00c31.mockapi.io/movies");
+      data
+        .then((x) => x.json())
+        .then((x) => {
+        let res=x;
+
+        res.map((x)=>{
+
+            let poster=document.createElement("img");
+            poster.src=x.poster;
+            poster.style.height="250px";
+            poster.style.width="250px"
+
+            let title=document.createElement("h2");
+            title.innerHTML=x.title;
+
+            let genre=document.createElement("h3");
+            genre.innerHTML=x.genre;
+            genre.style.backgroundColor="white"
+
+            let card=document.createElement("div");
+            card.append(poster,title,genre);
+            card.style.border="3px solid red";
+            card.style.width="250px"
+            card.style.padding="10px"
+            card.style.backgroundColor="orange";
+            main_div.append(card);
+            
+
+
+            // document.body.append(card)
+
+        })
+        })
+        .catch((x) => {
+          console.log(x);
+        });
+    </script>
+
+    <!-- 
+    fetch is a js library
+    we can use it for making api calls, and it will returns a promise by default.
+    in fetch we need to 
+    additionaly use json() to retrive the json data 
+    from response.
+     
+     
+     we have one more library axios, 
+     in that it will automatically retrieves json data from the response
+     but that is to be installed explicitly-->
+  </body>
+</html>
