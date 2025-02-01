@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn">click me for insert</button>
+    <button id="btn1">click me to get the data</button>
+    <p id="p1"></p>
+    <script>
+      let data = {
+        name: "Harish",
+        city: "hyd",
+        email: "harish@gmail.com",
+      };
+
+      let button = document.getElementById("btn");
+      let getButton = document.getElementById("btn1");
+      let mesg = document.getElementById("p1");
+      button.addEventListener("click", () => {
+        let url = "https://679af5f9747b09cdccd00c31.mockapi.io/movies";
+
+        let req = fetch(url, {
+          method: "POST",
+          headers: { "Content-type": "application/json" },
+          body: JSON.stringify(data),
+        });
+        req.then((x) => {
+          console.log(x.status);
+          if (x.status == 201) {
+            mesg.innerHTML = "Data successfuly uploaded";
+          }
+        });
+      });
+
+      getButton.addEventListener("click", () => {
+        let data = fetch("https://679af5f9747b09cdccd00c31.mockapi.io/movies", {
+          method: "get",
+        });
+        data
+          .then((x) => {
+            console.log(x);
+            if(x.status==200){
+                mesg.innerHTML="Data successfully fetched"
+            }
+            else if(x.status==404){
+                mesg.innerHTML="Data not found"
+            }
+            else if(x.status==500){
+                mesg.innerHTML="Internal server error"
+            }
+            else{
+                mesg.innerHTML="something went wrong"
+            }
+            return x.json();
+          })
+          .then((x) => console.log(x));
+      });
+    </script>
+  </body>
+</html>

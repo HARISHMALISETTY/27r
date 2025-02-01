@@ -626,6 +626,12 @@ it can be called as a universal data type in transferring data and storing data.
 
 
 
+HTTP REQUEST  METHODS:
+----------------------
+1.GET
+2.POST
+3.PUT/PATCH
+4.DELETE.
 
 
 
