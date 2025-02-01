@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="form">
+      <input type="text" /> <br /><br />
+      <input type="text" />
+      <input type="submit" />
+    </form>
+    <script>
+      let form = document.getElementById("form");
+      form.addEventListener("submit", (x) => {
+        x.preventDefault();
+        console.log(x.target[0].value, x.target[1].value);
+        let name = x.target[0].value;
+        let email = x.target[1].value;
+        let userDetails = { username: name, email: email };
+
+        let existingData = JSON.parse(localStorage.getItem("userinfo")) || [];
+        existingData.push(userDetails);
+
+        let strigifiedData = JSON.stringify(existingData);
+
+        localStorage.setItem("userinfo", strigifiedData);
+        for (i = 0; i < existingData.length; i++) {
+          let users = existingData[i];
+          let card = document.createElement("div");
+          let y = document.createElement("h1");
+          let z = document.createElement("p");
+          card.style.backgroundColor = "yellow";
+          document.body.append(card);
+          card.append(y, z);
+
+          y.innerHTML = userDetails.username;
+          z.innerHTML = userDetails.email;
+}
+      });
+     let user=JSON.parse(localStorage.getItem("userinfo"));
+     for (i = 0; i < user.length; i++) {
+          let users = user[i];
+          let card = document.createElement("div");
+          let y = document.createElement("h1");
+          let z = document.createElement("p");
+          card.style.backgroundColor = "yellow";
+          document.body.append(card);
+          card.append(y, z);
+
+          y.innerHTML = user[i].username;
+          z.innerHTML = user[i].email;
+        }
+     
+
+    </script>
+  </body>
+</html>

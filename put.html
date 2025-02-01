@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn">click me</button>
+    <p id="p1"></p>
+    <script>
+      // let data={
+
+      //    "age":25
+
+      // }
+      let btn = document.getElementById("btn");
+      let message=document.getElementById("p1")
+      btn.addEventListener("click", () => {
+        let api = "https://679af5f9747b09cdccd00c31.mockapi.io/movies/6";
+
+        let apiCall = fetch(api, {
+          method: "DELETE",
+          headers: { "content-type": "application/json" },
+         
+        });
+
+        apiCall
+          .then((x) => {
+            console.log(x);
+            if(x.status==200){
+                message.innerHTML="item deleted successfully"
+
+            }
+            else if(x.status==404){
+                message.innerHTML="item not found"
+            }
+            else{
+                message.innerHTML="something went wrong"
+            }
+          })
+          .catch((e) => {
+            console.log(e);
+          });
+      });
+    </script>
+  </body>
+</html>
