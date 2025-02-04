@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #u_err {
+        display: none;
+      }
+      #p_err {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="myForm">
+      <label for="username">Enter Username:</label>
+      <input type="text" id="username" name="username" required /><br />
+      <span id="u_err"></span><br />
+      <label for="pswd">Enter Password:</label>
+      <input type="password" name="pswd" id="pswd" required /><br />
+      <span id="p_err"></span><br />
+      <input type="submit" />
+    </form>
+
+    <script>
+      let form = document.getElementById("myForm");
+      let ip1 = document.getElementById("username");
+      let ip2 = document.getElementById("pswd");
+      let u_err = document.getElementById("u_err");
+      let p_err = document.getElementById("p_err");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault;
+      });
+
+      ip1.addEventListener("focus", () => {
+        ip1.style.backgroundColor = "orange";
+        u_err.style.display = "none";
+      });
+
+      ip1.addEventListener("blur", () => {
+        let pattern = /^[a-zA-Z][a-zA-Z0-9._]{4,14}$/;
+        let op = pattern.test(ip1.value);
+        console.log(op);
+        if (ip1.value.length <= 0) {
+          u_err.style.display = "inline-block";
+          u_err.style.color = "red";
+          u_err.innerHTML = "username should not be empty";
+          ip1.style.backgroundColor = "red";
+        } else if (!op) {
+          ip1.style.backgroundColor = "red";
+          u_err.style.display = "inline-block";
+          u_err.style.color = "red";
+          u_err.innerHTML = "username is invalid";
+        } else {
+          ip1.style.backgroundColor = "transparent";
+        }
+      });
+
+      ip2.addEventListener("focus", () => {
+        ip2.style.backgroundColor = "orange";
+      });
+
+      ip2.addEventListener("blur", () => {
+        let pattern =
+          /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+        let op = pattern.test(ip2.value);
+        if (ip2.value.length <= 0) {
+          p_err.innerHTML = "password should not be empty";
+          p_err.style.display = "inline-block";
+          p_err.style.color = "red";
+          ip2.style.backgroundColor = "red";
+        } else if (!op) {
+          p_err.style.display = "inline-block";
+          p_err.style.color = "red";
+          p_err.innerHTML = "password is not matching with req criteria";
+        } else {
+          ip2.style.backgroundColor = "transparent";
+        }
+      });
+    </script>
+  </body>
+</html>

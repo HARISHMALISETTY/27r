@@ -634,4 +634,44 @@ HTTP REQUEST  METHODS:
 4.DELETE.
 
 
+ASYNC AND AWAIT:
+----------------
+To handle asynchronous operations, we should use async functions instead of 
+normal functions.
+
+we can make normal functions to async functions, by adding a keyword async.
+
+will use the await to retrive the response/op from asynchronous operations.
+
+we can't use await without async.
+
+to avoid promise chaining, we can go with async/await for better readability.
+
+The await keyword is used in async functions to pause the execution of the function until a promise is resolved or rejected.
+
+when the promise is resolved, the await expression returns the resolved value.
+
+if the promise is rejected, the await expression will throws an error..
+
+In essense, await allows you to write the asynchronous code that looks and feels like synchronous code.
+
+we can use try-catch blocks with async/await to handle the errors in a more better and straightforward way.
+
+
+REGEX:
+------
+it is a tool that used in searching,matching and validating rules in a string.
+
+mainly we will use in string input validations like form validations.
+
+it can be also called as regular expressions.
+
+
+
+
+
+
+
+
+
 
