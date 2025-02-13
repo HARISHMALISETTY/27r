@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="" id="frm1">
+        <input type="text" id="textInput"/>
+        <input type="submit"/>
+    </form>
+
+    <p id="p1"></p>
+
+    <script>
+        // Debounce function
+        function debounce(func, delay) {
+            let timeoutId;
+            return function(event) {
+                clearTimeout(timeoutId);
+                timeoutId = setTimeout(() => {
+                    func(event);
+                }, delay);
+            };
+        }
+
+        // Function to handle input
+        function updateParagraph(e) {
+            const p1 = document.getElementById("p1");
+            p1.innerHTML = e.target.value;
+        }
+
+        // Create debounced version of updateParagraph
+        const debouncedUpdateParagraph = debounce(updateParagraph, 300);
+
+        // Add event listener to input field
+        const textInput = document.getElementById("textInput");
+        textInput.addEventListener("input", debouncedUpdateParagraph);
+    </script>
+    
+</body>
+</html>
